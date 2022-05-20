@@ -1,0 +1,44 @@
+.main {
+  background-image: url("../../image/carbon-capture-hero (1) 1.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 717px;
+  color: #18191F;
+  padding: 0 165px;
+
+  h1 {
+    margin-top: 74px;
+  }
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #FFFFFF;
+  height: 399px;
+  background-image: url("../../image/cranes-construction-site 1.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .polygon {
+    position: absolute;
+    top: 650px;
+    left: 165px;
+    display: flex;
+    img {
+      height: 255px;
+    }
+  }
+}
+
+.footerMain {
+  height: 102px;
+  background: #000000;
+  color: #FFF;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
