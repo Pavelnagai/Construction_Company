@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Construction_Company/static/css/main.6050377f.css",
+    "main.js": "/Construction_Company/static/js/main.a1caa1f2.js",
+    "static/media/carbon-capture-hero (1) 1.jpg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.3e2048f7cb7d12bce99c.jpg",
+    "static/media/cranes-construction-site 1.png": "/Construction_Company/static/media/cranes-construction-site 1.6515e4f62d3a37a0d390.png",
+    "static/media/Project Cover.png": "/Construction_Company/static/media/Project Cover.9ed120886bdd8f36342a.png",
+    "static/media/builder-construction-vest-orange-helmet-standing-white-studio 1.png": "/Construction_Company/static/media/builder-construction-vest-orange-helmet-standing-white-studio 1.3bbfdc4dd4b838cec5d0.png",
+    "static/media/work-1.png": "/Construction_Company/static/media/work-1.0b928e662d5db7b9339e.png",
+    "static/media/work-3.png": "/Construction_Company/static/media/work-3.cace1b09a3dabc196609.png",
+    "static/media/Project Cover-1.png": "/Construction_Company/static/media/Project Cover-1.2b5025d62e51ed80768b.png",
+    "static/media/work-2.png": "/Construction_Company/static/media/work-2.aae421622b6db59dbd8a.png",
+    "static/media/work-4.png": "/Construction_Company/static/media/work-4.2338e72a413078ba698a.png",
+    "static/media/Photo.png": "/Construction_Company/static/media/Photo.413785dd7c4efae66dfe.png",
+    "index.html": "/Construction_Company/index.html",
+    "main.6050377f.css.map": "/Construction_Company/static/css/main.6050377f.css.map",
+    "main.a1caa1f2.js.map": "/Construction_Company/static/js/main.a1caa1f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6050377f.css",
+    "static/js/main.a1caa1f2.js"
+  ]
+}
