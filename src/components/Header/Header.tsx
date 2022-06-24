@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../../image/гск 1.png';
 import ellipse from '../../image/Ellipse 102.png';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -20,19 +21,19 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">О нас</a>
+                                    <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Каталог</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Доставка и оплата</a>
+                                    <Link className="nav-link" to="/delivery">Доставка и оплата</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Контакты</a>
+                                    <Link className="nav-link" to={"/contactsList"}>Контакты</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Статьи</a>
+                                    <Link className="nav-link" to="/articles">Статьи</Link>
                                 </li>
                             </ul>
                             <div className="">
@@ -42,11 +43,8 @@ const Header = () => {
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </nav>

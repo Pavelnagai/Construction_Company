@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contacts.scss';
-import MyComponent from "../Mao/Map";
-
+import MyComponent from "../../Mao/Map";
+import iconTelephone from '../../../image/Vector 189.png'
 const Contacts = () => {
     return (
         <div className="contacts">
@@ -40,10 +40,11 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-4 ">Пресненская наб., 8, стр. 1, Москва, Россия</div>
-                    |
-                    <div className="col-4 text-center">+7 (964) 578-14-83</div>|
-                    <div className="col-3 text-center">info@glavsk.ru</div>
+                    <div className="col-3 ">Пресненская наб., 8, стр. 1, Москва, Россия</div>
+                    <div className="col-1">|</div>
+                    <div className="col-3"><img src={iconTelephone} alt=""/> +7 (964) 578-14-83</div>
+                    <div className="col-1">|</div>
+                    <div className="col-3">info@glavsk.ru</div>
                 </div>
             </div>
         </div>

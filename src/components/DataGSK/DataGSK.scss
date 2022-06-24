@@ -1,11 +1,17 @@
 .dataGsk {
   padding: 64px 165px;
+
   .calc {
     margin: 20px 0;
+    width: 1110px;
     height: 302px;
     left: 165px;
     top: 64px;
     border-radius: 16px;
     background: #FFAD00;
+
+    .cal {
+      margin: 48px 0 48px 48px;
+    }
   }
 }

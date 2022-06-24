@@ -16,15 +16,15 @@ const DataGsk = () => {
             <div className="container" style={{position: "relative"}}>
                 <div className="calc">
                     <div className="row d-flex align-items-center">
-                        <div className="col-6">
+                        <div className="col-6 cal">
                             <h3>Рассчёт цены бетона с доставкой на
                                 карте</h3>
                             <button className="btn btn-light">Калькулятор доставки</button>
                         </div>
-                        <div className="col-3">
-                            <img src={vector} alt=""/>
+                        <div className="col-2">
+                            <img style={{width: "252px", height: "108px"}} src={vector} alt=""/>
                         </div>
-                        <div className="col-3">
+                        <div className="col-2">
                             <img style={{borderBottomRightRadius: "16px", borderTopRightRadius: "16px"}} src={photo}
                                  alt=""/>
                         </div>

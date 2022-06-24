@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.scss';
 import gsk from '../../image/гск 1.png';
+import {Link} from "react-router-dom";
+import ContactsList from "../Contacts/ContactsList";
 
 const Footer = () => {
     return (
@@ -20,20 +22,23 @@ const Footer = () => {
                     </div>
                     <div className="col-3">
                         <ul>
-                            <li>Главная</li>
-                            <li>О нас</li>
-                            <li>Каталог</li>
-                            <li>Доставка и оплата</li>
-                            <li>Сотрудничество</li>
+                            <li><Link to='/'>Главная</Link></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Доставка и оплата</a></li>
+                            <li><a href="">Сотрудничество</a></li>
                         </ul>
                     </div>
                     <div className="col-3">
-                        <ul>
-                            <li>Контакты</li>
-                            <li>Статьи</li>
-                            <li>Сертификаты ГОСТ</li>
-                            <li>Отзывы</li>
-                        </ul>
+                        <nav>
+                            <Link to="/contactsList" >Контакты</Link>
+                            <br/>
+                            <Link to="/articles" >Статьи</Link>
+                            <br/>
+                            <Link to="">Сертификаты ГОСТ</Link>
+                            <br/>
+                            <Link to="">Отзывы</Link>
+                        </nav>
                     </div>
                     <div className="col-3">
                         <ul>
@@ -44,8 +49,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-5">© 2022 ГСК. Все права защищены.</div>
-                    <div className="col-5">Пользовательское соглашение</div>
+                    <div className="col-4">© 2022 ГСК. Все права защищены.</div>
+                    <div className="col-1">|</div>
+                    <div className="col-4">Пользовательское соглашение</div>
                 </div>
                 <div className="row">
                     <div className="col-6" style={{fontSize: "7px"}}>
