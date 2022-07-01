@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import gsk from '../../image/гск 1.png';
 import {Link} from "react-router-dom";
-import ContactsList from "../Contacts/ContactsList";
+import Vector189 from "../../image/Vector 189.png"
 
 const Footer = () => {
     return (
@@ -22,30 +22,28 @@ const Footer = () => {
                     </div>
                     <div className="col-3">
                         <ul>
-                            <li><Link to='/'>Главная</Link></li>
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Каталог</a></li>
-                            <li><a href="">Доставка и оплата</a></li>
-                            <li><a href="">Сотрудничество</a></li>
+                            <li><Link className="text-decoration-none" to='/'>Главная</Link></li>
+                            <li><a className="text-decoration-none" href="">О нас</a></li>
+                            <li><a className="text-decoration-none" href="">Каталог</a></li>
+                            <li><a className="text-decoration-none" href="">Доставка и оплата</a></li>
+                            <li><a className="text-decoration-none" href="">Сотрудничество</a></li>
                         </ul>
                     </div>
                     <div className="col-3">
-                        <nav>
-                            <Link to="/contactsList" >Контакты</Link>
-                            <br/>
-                            <Link to="/articles" >Статьи</Link>
-                            <br/>
-                            <Link to="">Сертификаты ГОСТ</Link>
-                            <br/>
-                            <Link to="">Отзывы</Link>
+                        <nav className="d-flex flex-column text-decoration-none">
+                            <Link className="text-decoration-none" to={''}>Прайс-лист </Link>
+                            <Link className="text-decoration-none" to="/contactsList">Контакты</Link>
+                            <Link className="text-decoration-none" to="/articles">Статьи</Link>
+                            <Link className="text-decoration-none" to="">Сертификаты ГОСТ</Link>
+                            <Link className="text-decoration-none" to="">Отзывы</Link>
                         </nav>
                     </div>
                     <div className="col-3">
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
+                        <div>
+                            <i className=""><img src={Vector189} alt=""/></i> +7(499)377-77-70
+                            info@glavsk.ru
+                            Пресненская наб., 8, стр. 1, Москва, Россия
+                        </div>
                     </div>
                 </div>
                 <div className="row">

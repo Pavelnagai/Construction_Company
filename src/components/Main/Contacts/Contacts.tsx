@@ -19,7 +19,7 @@ const Contacts = () => {
                             специалистам.</p>
                         <form className="row">
                             <div className="col-md-6">
-                                <input type="email" className="form-control" id="inputEmail4" placeholder="Ваше имя"/>
+                                <input type="email" className="form-control form-control-lg" id="inputEmail4" placeholder="Ваше имя"/>
                             </div>
                             <div className="col-md-6">
                                 <input type="password" className="form-control" id="inputPassword4"

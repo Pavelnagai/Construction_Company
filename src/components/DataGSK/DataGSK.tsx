@@ -6,14 +6,12 @@ import work4 from '../../image/workGSK/work-4.png'
 import vector from '../../image/workGSK/Vector 1.png'
 import photo from '../../image/workGSK/Photo.png'
 
-
 import './DataGSK.scss'
 
 const DataGsk = () => {
     return (
         <div className="dataGsk">
-        <div className="container-fluid">
-            <div className="container" style={{position: "relative"}}>
+            <div className="container">
                 <div className="calc">
                     <div className="row d-flex align-items-center">
                         <div className="col-6 cal">
@@ -39,7 +37,6 @@ const DataGsk = () => {
                     <div className="col-3"><img src={work4} alt="work4"/></div>
                 </div>
             </div>
-        </div>
         </div>
     );
 };

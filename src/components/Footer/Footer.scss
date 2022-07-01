@@ -6,6 +6,13 @@
   .containerUL {
     ul {
       list-style: none;
+      li{
+        text-decoration: none;
+      }
+    }
+    nav {
+      text-decoration-color: white;
+      text-decoration: none;
     }
   }
 }
