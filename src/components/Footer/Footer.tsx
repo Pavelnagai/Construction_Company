@@ -7,7 +7,7 @@ import Vector189 from "../../image/Vector 189.png"
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="container">
+            {/*<div className="container">*/}
                 <div className="row containerUL">
                     <div className="col-3" style={{fontSize: "9px"}}>
                         <img src={gsk} alt="gsk"/>
@@ -20,17 +20,17 @@ const Footer = () => {
                         <p>Фактический адрес: Пресненская наб., 8, стр. 1, Москва, Россия</p>
 
                     </div>
-                    <div className="col-3">
-                        <ul>
-                            <li><Link className="text-decoration-none" to='/'>Главная</Link></li>
-                            <li><a className="text-decoration-none" href="">О нас</a></li>
-                            <li><a className="text-decoration-none" href="">Каталог</a></li>
-                            <li><a className="text-decoration-none" href="">Доставка и оплата</a></li>
-                            <li><a className="text-decoration-none" href="">Сотрудничество</a></li>
-                        </ul>
+                    <div className="col-3 klas" >
+                        <nav className="d-flex flex-column">
+                            <Link to="/">Главная</Link>
+                            <Link to={''}>О нас</Link>
+                            <Link to={''}>Каталог</Link>
+                            <Link to={''}>Доставка и оплата</Link>
+                            <Link to={''}>Сотрудничество</Link>
+                        </nav>
                     </div>
                     <div className="col-3">
-                        <nav className="d-flex flex-column text-decoration-none">
+                        <nav className="d-flex flex-column">
                             <Link className="text-decoration-none" to={''}>Прайс-лист </Link>
                             <Link className="text-decoration-none" to="/contactsList">Контакты</Link>
                             <Link className="text-decoration-none" to="/articles">Статьи</Link>
@@ -62,7 +62,7 @@ const Footer = () => {
                         действительных цен.
                     </div>
                 </div>
-            </div>
+            {/*</div>*/}
         </div>
     );
 };

@@ -192,19 +192,19 @@ const AboutUs = () => {
                         специалистам.</p>
                     <form className="row">
                         <div className="col-md-6">
-                            <input type="email" className="form-control" id="inputEmail4" placeholder="Ваше имя"/>
+                            <input type="email" className="form-control form-control-lg" id="inputEmail4" placeholder="Ваше имя"/>
                         </div>
                         <div className="col-md-6">
-                            <input type="password" className="form-control" id="inputPassword4"
+                            <input type="password" className="form-control form-control-lg" id="inputPassword4"
                                    placeholder="Ваш e-mail"/>
                         </div>
-                        <div className="col-md-6">
-                                    <textarea className="form-control"
+                        <div className="col-md-12 gy-3">
+                                    <input className="form-control form-control-lg  "
                                               placeholder="Задайте вопрос нашим специалистам" required/>
                         </div>
-                        <div className="row">
+                        <div className="row gy-2">
                             <div className="col-1"><input type="checkbox"/></div>
-                            <div className="col-5">Я согласен на обработку персональных данных</div>
+                            <div className="col-5 ">Я согласен на обработку персональных данных</div>
                             <div className="col-6">
                                 <button className="btn btn-warning">Отправить письмо</button>
                             </div>
