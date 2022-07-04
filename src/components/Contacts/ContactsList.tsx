@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import Footer from "../Footer/Footer";
 import imageScreenshot from "../../image/Снимок экрана 2022-03-26 в 23.30 2.png"
 import MyComponent from "../Mao/Map";
 
 const ContactsList = () => {
+    const [value, setValue] = useState<boolean>(false)
+    const disableButton = (e: ChangeEvent<HTMLInputElement>) => {
+        setValue(e.target.checked)
+    }
     return (
         <>
             <div className="container">
@@ -48,10 +52,12 @@ const ContactsList = () => {
                                               placeholder="Задайте вопрос нашим специалистам" required/>
                                 </div>
                                 <div className="row gy-3">
-                                    <div className="col-1"><input type="checkbox"/></div>
+                                    <div className="col-1">
+                                        <input onChange={disableButton} type="checkbox"/>
+                                    </div>
                                     <div className="col-5">Я согласен на обработку персональных данных</div>
                                     <div className="col-6">
-                                        <button className="btn btn-warning">Отправить письмо</button>
+                                        <button className="btn btn-warning" disabled={+value === 0}>Отправить письмо</button>
                                     </div>
                                 </div>
                             </form>

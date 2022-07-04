@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Delivery from "./components/Delivery/Delivery";
 import Articles from "./components/Articles/Articles";
 import Header from "./components/Header/Header";
+import CertificatesAndGOST from "./components/certificatesAndGOSTStandards/Certificates";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/articles" element={<Articles/>}/>
                 <Route path="/aboutUs" element={<AboutUs/>}/>
                 <Route path="/delivery" element={<Delivery/>}/>
+                <Route path="/certificate" element={<CertificatesAndGOST/>}/>
             </Routes>
         </div>
     );

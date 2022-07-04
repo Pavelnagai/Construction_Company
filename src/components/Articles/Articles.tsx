@@ -8,7 +8,7 @@ const Articles = () => {
         <div className="articles">
             <div className="container-fluid">
                 <div className="container">
-                    <h1>Актульные статьи</h1>
+                    <h2>Актульные статьи</h2>
                     <div className="row">
                         <div className="col-6">
                             <h3>Как определяется класс бетона?</h3>

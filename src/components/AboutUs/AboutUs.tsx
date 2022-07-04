@@ -3,19 +3,14 @@ import AboutUsGsk from '../../image/Rectangle 4065.png'
 import AboutUsGskBeton from '../../image/Rectangle 4066.png'
 import AboutUsGskEks from '../../image/Rectangle 4067.png'
 import AboutUsGsk68 from '../../image/Rectangle 4068.png'
-import AboutUsGsk69 from '../../image/Rectangle 4069.png'
-import certificate1 from '../../image/124534 1.png'
-import certificate2 from '../../image/124534 2.png'
-import declaration1 from '../../image/Снимок экрана 2022-05-01 в 16.48 1.png';
-import declaration2 from '../../image/Снимок экрана 2022-05-01 в 16.48 2.png';
-import Footer from "../Footer/Footer";
+import CertificatesAndGOST from "../certificatesAndGOSTStandards/Certificates";
 
 const AboutUs = () => {
     return (
         <>
             <div className="container">
                 <h2>Главная Строительная Компания</h2>
-                <img src={AboutUsGsk} alt=""/>
+                <img className="img-fluid" src={AboutUsGsk} alt=""/>
                 <p>Госбетон – это ООО «Главная Строительная Компания», одна из крупнейших на отечественном рынке. Она
                     является не только производителем качественных материалов, но также и застройщиком. Мощности ГСК –
                     это
@@ -27,8 +22,8 @@ const AboutUs = () => {
                     онлайн-магазин по продаже товарного бетона для круглосуточной клиентской поддержки. Ассортимент
                     магазина
                     довольно широк, это не только товарный бетон, но также:</p>
-                <div className="row">
-                    <div className="col-4">
+                <div className="row  row-cols-3 ">
+                    <div className="col-xs-12 col-md-4 bg-light border">
                         <h3>Бетонные смеси</h3>
                         <ul>
                             <li>керамзит бетон;</li>
@@ -41,7 +36,7 @@ const AboutUs = () => {
                             для вас место. Также можем предоставить аренду техники, которая позволит облегчить работу с
                             бетонными смеясми.</p>
                     </div>
-                    <div className="col-4">
+                    <div className="col-xs-12 col-md-4 bg-light border">
                         <h3>Песок и щебень</h3>
                         <ul>
                             <li>песок сеяный;</li>
@@ -56,7 +51,7 @@ const AboutUs = () => {
                                 также песок на самых выгодных условиях.</p>
                         </ul>
                     </div>
-                    <div className="col-4">
+                    <div className="col-xs-12 col-md-4 bg-light border">
                         <h3>Арматура</h3>
                         <ul>
                             <li>арматура рифлёная в ассортименте с диаметром от 12 до 40 мм</li>
@@ -70,10 +65,10 @@ const AboutUs = () => {
                 </div>
                 <hr/>
                 <div className="row">
-                    <div className="col-6">
-                        <img src={AboutUsGskBeton} alt=""/>
+                    <div className="col-xs-12 col-md-6">
+                        <img className="img-fluid" src={AboutUsGskBeton} alt=""/>
                     </div>
-                    <div className="col-6">
+                    <div className="col-xs-12 col-md-6">
                         <h3>Заливка бетона</h3>
                         <p>Наша компания также предоставляет заказчикам такую услугу, как заливка бетона. Этот процесс
                             завершает создание монолитной конструкции. У нас есть все необходимые инструменты и
@@ -87,7 +82,7 @@ const AboutUs = () => {
                 </div>
                 <hr/>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-xs-12 col-md-6">
                         <h3>Процедура экспертизы прочности бетона</h3>
                         <p>В нашем распоряжении есть уникальные лаборатории, позволяющие проводить контроль выпускаемого
                             бетона на каждом этапе. Мы также можем совершать исследования и экспертизы прочности бетона
@@ -100,27 +95,29 @@ const AboutUs = () => {
                             позиции, но также проводить реализацию бетона, доставку смесей на строительные объекты по
                             минимальным расценкам.</p>
                     </div>
-                    <div className="col-6">
-                        <img src={AboutUsGskEks} alt=""/>
+                    <div className="col-xs-12 col-md-6">
+                        <img className="img-fluid" src={AboutUsGskEks} alt=""/>
                     </div>
                 </div>
                 <hr/>
-                <div className="row">
-                    <div className="col-6">
-                        <img src={AboutUsGsk68} alt=""/>
-                    </div>
-                    <div className="col-6">
+                <div className="row d-flex flex-md-row-reverse">
+                    <div className="col-xs-12 col-md-6 ">
                         <h3>Гарантия высокого качества и доступной цены</h3>
+                    </div>
+                    <div className="col-xs-12 col-md-6">
+                        <img className="img-fluid" src={AboutUsGsk68} alt=""/>
+                    </div>
+                    <div className="col-xs-12 col-md-6">
                         <p>Для повышения уровня качества бетонной продукции наши работники тщательно планируют и
                             контролируют все производственные процессы. Это позволяет не только оптимизировать расходы
                             предприятия, но также предоставлять клиенту доступные цены на все виды производимых бетонных
                             смесей. Выпускаемая продукция соответствует всем ГОСТ сертификатам.
                         </p>
-
                         <p>
-                            Наша цель – продолжать развиваться, чтобы предоставить клиенту лучшее качество бетонных
-                            смесей,
-                            а также инженерную поддержку. Именно для этого была разработана автоматизированная система
+                            <b>Наша цель – продолжать развиваться, чтобы предоставить клиенту лучшее качество бетонных
+                                смесей,
+                                а также инженерную поддержку.</b> Именно для этого была разработана автоматизированная
+                            система
                             для
                             заказов и оплаты товара. Благодаря этому, все клиенты имеют возможность купить бетон
                             тяжелого
@@ -139,80 +136,15 @@ const AboutUs = () => {
                             все мелочи и сможет заняться сопровождением заказа.
                         </p>
 
-                        <p>
+                        <p className="fw-bold">
                             Именно поэтому сотрудничать с нами всегда приятно и выгодно.
                         </p>
                     </div>
 
                 </div>
                 <hr/>
-                <h2>Сертификаты и ГОСТы</h2>
-                <hr/>
-                <img src={AboutUsGsk69} alt=""/>
-                <p>Покупая товарный бетон, обратите внимание на важный технический показатель его прочности, так как от
-                    этого зависит надежность, прочность и долговечность готовой монолитной конструкции. При подборе
-                    подходящего цементного раствора специалисты обращают внимание на классы и марки жидкого бетона,
-                    которые
-                    помогают понять, насколько материал подходит для проведения конкретных монолитных строительных
-                    работ.
-                    Хотя другие параметры готовой бетонной смеси БСГ (огнеупорность, водонепроницаемость,
-                    морозостойкость,
-                    подвижность) не менее значительные, отходят на второй план.</p>
-                <div className="row">
-                    <div className="col-4">
-                        <img src={certificate1} alt=""/>
-                        <h5>Сертификат ГОСТ на бетон </h5>
-                    </div>
-                    <div className="col-4">
-                        <img src={certificate2} alt=""/>
-                        <h5>Сертификат ГОСТ на керамзитбетон, тощий бетон </h5>
-                    </div>
-                    <div className="col-4">
-                        <h3>Декларации</h3>
-                        <p>Вы всегда можете проверить качество нашей продукции, так как помимо ГОСТов, мы имеем
-                            современные
-                            декларации на нашу продукцию, просто наведите камеру телефона или сканер на один из
-                            QR-кодов:</p>
-                        <div className="row">
-                            <div className="col-6">
-                                <img src={declaration1} alt=""/>
-                                <p>Декларация на раствор</p>
-                            </div>
-                            <div className="col-6">
-                                <img src={declaration2} alt=""/>
-                                <p>Декларация на бетон</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div className="col">
-                    <h1>Остались вопросы?</h1>
-                    <p>Если вы не нашли ответ на свой вопрос на нашем сайте, то можете написать его нашим
-                        специалистам.</p>
-                    <form className="row">
-                        <div className="col-md-6">
-                            <input type="email" className="form-control form-control-lg" id="inputEmail4" placeholder="Ваше имя"/>
-                        </div>
-                        <div className="col-md-6">
-                            <input type="password" className="form-control form-control-lg" id="inputPassword4"
-                                   placeholder="Ваш e-mail"/>
-                        </div>
-                        <div className="col-md-12 gy-3">
-                                    <input className="form-control form-control-lg  "
-                                              placeholder="Задайте вопрос нашим специалистам" required/>
-                        </div>
-                        <div className="row gy-2">
-                            <div className="col-1"><input type="checkbox"/></div>
-                            <div className="col-5 ">Я согласен на обработку персональных данных</div>
-                            <div className="col-6">
-                                <button className="btn btn-warning">Отправить письмо</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <CertificatesAndGOST/>
             </div>
-            <Footer/>
         </>
     );
 };
