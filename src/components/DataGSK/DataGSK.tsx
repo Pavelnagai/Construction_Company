@@ -14,7 +14,7 @@ const DataGsk = () => {
             <div className="container">
                 <div className="calc">
                     <div className="row d-flex align-items-center">
-                        <div className="col-6 cal">
+                        <div className="col-sm-12 col-md-6 cal">
                             <h3>Рассчёт цены бетона с доставкой на
                                 карте</h3>
                             <button className="btn btn-light">Калькулятор доставки</button>
@@ -28,14 +28,16 @@ const DataGsk = () => {
                         </div>
                     </div>
                 </div>
-
-                <h2>Работы, выполненные ГСК</h2>
                 <div className="row">
-                    <div className="col-3"><img src={work1} alt="work1"/></div>
-                    <div className="col-3"><img src={work2} alt="work2"/></div>
-                    <div className="col-3"><img src={work3} alt="work3"/></div>
-                    <div className="col-3"><img src={work4} alt="work4"/></div>
+                    <h2>Работы, выполненные ГСК</h2>
+                    <div className="row row-cols-sm-2 row-cols-md-4">
+                        <div className="col-sm-6 col-md-3"><img src={work1} alt="work1"/></div>
+                        <div className="col-sm-6 col-md-3"><img src={work2} alt="work2"/></div>
+                        <div className="col-sm-6 col-md-3"><img src={work3} alt="work3"/></div>
+                        <div className="col-sm-6 col-md-3"><img src={work4} alt="work4"/></div>
+                    </div>
                 </div>
+
             </div>
         </div>
     );

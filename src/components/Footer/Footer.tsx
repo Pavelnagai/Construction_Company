@@ -8,7 +8,7 @@ const Footer = () => {
         <div className={style.footer}>
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-md-3">
                         <div className={style.itemId}>
                             <img src={gsk} alt="gsk"/>
                             <ul>
@@ -20,16 +20,9 @@ const Footer = () => {
                                 <li>Юридический адрес: 125362, г. Москва, ул. Вишневая, д.2/14, кв.35</li>
                                 <li>Фактический адрес: Пресненская наб., 8, стр. 1, Москва, Россия</li>
                             </ul>
-                            {/*<p>ИНН: 7733332673</p>*/}
-                            {/*<p>ОГРН: 1187746942118</p>*/}
-                            {/*<p>Генеральный директор ООО «ГСК»*/}
-                            {/*    Дауров Тимур Борисович*/}
-                            {/*</p>*/}
-                            {/*<p>Юридический адрес: 125362, г. Москва, ул. Вишневая, д.2/14, кв.35</p>*/}
-                            {/*<p>Фактический адрес: Пресненская наб., 8, стр. 1, Москва, Россия</p>*/}
                         </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-3">
                         <nav>
                             <div className={style.link}>
                                 <Link className={style.item} to="/">Главная</Link>
@@ -40,7 +33,7 @@ const Footer = () => {
                             </div>
                         </nav>
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-3">
                         <nav className="d-flex flex-column">
                             <div className={style.link}>
                                 <Link className={style.item} to={''}>Прайс-лист </Link>
@@ -52,7 +45,7 @@ const Footer = () => {
 
                         </nav>
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-3">
                         <div className={style.contactsItems}>
                             <div className={style.item}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"

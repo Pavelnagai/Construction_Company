@@ -8,8 +8,8 @@ import CertificatesAndGOST from "../certificatesAndGOSTStandards/Certificates";
 const AboutUs = () => {
     return (
         <>
-            <div className="container">
-                <h2>Главная Строительная Компания</h2>
+            <div className="container container-sm container-md ">
+                <h2 className="text-sm-center">Главная Строительная Компания</h2>
                 <img className="img-fluid" src={AboutUsGsk} alt=""/>
                 <p>Госбетон – это ООО «Главная Строительная Компания», одна из крупнейших на отечественном рынке. Она
                     является не только производителем качественных материалов, но также и застройщиком. Мощности ГСК –
@@ -22,8 +22,8 @@ const AboutUs = () => {
                     онлайн-магазин по продаже товарного бетона для круглосуточной клиентской поддержки. Ассортимент
                     магазина
                     довольно широк, это не только товарный бетон, но также:</p>
-                <div className="row  row-cols-3 ">
-                    <div className="col-xs-12 col-md-4 bg-light border">
+                <div className="row ">
+                    <div className="col-sm-12 col-md-4 bg-light border">
                         <h3>Бетонные смеси</h3>
                         <ul>
                             <li>керамзит бетон;</li>
@@ -36,7 +36,7 @@ const AboutUs = () => {
                             для вас место. Также можем предоставить аренду техники, которая позволит облегчить работу с
                             бетонными смеясми.</p>
                     </div>
-                    <div className="col-xs-12 col-md-4 bg-light border">
+                    <div className="col-sm-12 col-md-4 bg-light border">
                         <h3>Песок и щебень</h3>
                         <ul>
                             <li>песок сеяный;</li>
@@ -51,7 +51,7 @@ const AboutUs = () => {
                                 также песок на самых выгодных условиях.</p>
                         </ul>
                     </div>
-                    <div className="col-xs-12 col-md-4 bg-light border">
+                    <div className="col-sm-12 col-md-4 bg-light border">
                         <h3>Арматура</h3>
                         <ul>
                             <li>арматура рифлёная в ассортименте с диаметром от 12 до 40 мм</li>
@@ -69,7 +69,7 @@ const AboutUs = () => {
                         <img className="img-fluid" src={AboutUsGskBeton} alt=""/>
                     </div>
                     <div className="col-xs-12 col-md-6">
-                        <h3>Заливка бетона</h3>
+                        <h3 className="text-sm-center">Заливка бетона</h3>
                         <p>Наша компания также предоставляет заказчикам такую услугу, как заливка бетона. Этот процесс
                             завершает создание монолитной конструкции. У нас есть все необходимые инструменты и
                             оборудование
@@ -95,7 +95,7 @@ const AboutUs = () => {
                             позиции, но также проводить реализацию бетона, доставку смесей на строительные объекты по
                             минимальным расценкам.</p>
                     </div>
-                    <div className="col-xs-12 col-md-6">
+                    <div className="col-sm-12 col-md-6">
                         <img className="img-fluid" src={AboutUsGskEks} alt=""/>
                     </div>
                 </div>

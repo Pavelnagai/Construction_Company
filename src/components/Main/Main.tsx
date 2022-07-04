@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from "../Header/Header";
 import Polygon from "../../image/Polygon BG.png";
 import "./Main.scss"
-import InfoGsk from "../InfoGSK/InfoGSK";
-import DataGsk from "../DataGSK/DataGSK";
 import InfoGSK from "../InfoGSK/InfoGSK";
+import DataGsk from "../DataGSK/DataGSK";
 import Articles from "../Articles/Articles";
 import Contacts from "./Contacts/Contacts";
 import Partners from "../Partners/Partners";
@@ -20,7 +18,7 @@ const Main = () => {
                     <div className="main ">
                         <div className="container">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-sm-12 col-md-6">
                                     <h1>Главная Строительная Компания</h1>
                                     <p>Главная строительная компания, входит в Graal.group<br/> Специализируется на
                                         продаже
@@ -88,29 +86,29 @@ const Main = () => {
                 <h1>Порядок работы</h1>
                 <p>Процесс реализации вашего заказа от начала и до конца.</p>
                 <div className="row d-flex justify-content-center">
-                    <div className="col-3">
+                    <div className="col-xs-12 col-md-3">
                         <h4>Заявка</h4>
                         <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный
                             звонок на сайте.</p>
                     </div>
-                    <div className="col-3">
+                    <div className="col-xs-12 col-md-3">
                         <h4>Расчёт</h4>
                         <p>Наши специалисты рассчитают стоимость бетона и доставки, сделают счет или коммерческое
                             предложение.</p>
                     </div>
-                    <div className="col-3">
+                    <div className="col-sm-12 col-md-3">
                         <h4>Оплата</h4>
                         <p>Наличный и безналичный расчет. Предварительная оплата для юридических лиц. Скидки и особые
                             условия для постоянных клиентов.</p>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center">
-                    <div className="col-3">
+                    <div className="col-sm-12 col-md-3">
                         <h4>Производство</h4>
                         <p>Изготовление бетонной смеси или раствора на нашем РБУ, погрузка в автобетоносмеситель.
                             Контрольный звонок от диспетчера.</p>
                     </div>
-                    <div className="col-3">
+                    <div className="col-sm-12 col-md-3">
                         <h4>Доставка и разгрузка</h4>
                         <p>Доставка производится миксерами от 7 до 10 м3. Дополнительные условия поставки обговариваются
                             заранее.</p>
@@ -148,7 +146,6 @@ const Main = () => {
             <Partners/>
             <Contacts/>
             <Footer/>
-
         </div>
     );
 };

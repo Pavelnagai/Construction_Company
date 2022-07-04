@@ -7,10 +7,10 @@ const InfoGsk = () => {
         <div className="container-fluid">
             <div>
                 <div className="row d-flex align-items-center">
-                    <div className="col-6">
-                        <img src={constructor} alt="constructor"/>
+                    <div className="col-sm-2 col-md-6">
+                        <img className="img-fluid" src={constructor} alt="constructor"/>
                     </div>
-                    <div className="col-6">
+                    <div className="col-sm-8 col-md-6">
                         <div>
                             <h3>О ГСК</h3>
                         </div>
