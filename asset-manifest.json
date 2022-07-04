@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Construction_Company/static/css/main.53713ddc.css",
-    "main.js": "/Construction_Company/static/js/main.cf3d743e.js",
+    "main.css": "/Construction_Company/static/css/main.4942c12b.css",
+    "main.js": "/Construction_Company/static/js/main.01a16828.js",
     "static/media/carbon-capture-hero (1) 1.jpg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.3e2048f7cb7d12bce99c.jpg",
     "static/media/cranes-construction-site 1.png": "/Construction_Company/static/media/cranes-construction-site 1.6515e4f62d3a37a0d390.png",
     "static/media/Rectangle 4068.png": "/Construction_Company/static/media/Rectangle 4068.6f282bdc08f4f5b5335b.png",
@@ -24,11 +24,11 @@
     "static/media/Polygon BG.png": "/Construction_Company/static/media/Polygon BG.5fd3e9e8d783a5078747.png",
     "static/media/Снимок экрана 2022-03-26 в 23.30 2.png": "/Construction_Company/static/media/Снимок экрана 2022-03-26 в 23.30 2.bc37324832b739dbabac.png",
     "index.html": "/Construction_Company/index.html",
-    "main.53713ddc.css.map": "/Construction_Company/static/css/main.53713ddc.css.map",
-    "main.cf3d743e.js.map": "/Construction_Company/static/js/main.cf3d743e.js.map"
+    "main.4942c12b.css.map": "/Construction_Company/static/css/main.4942c12b.css.map",
+    "main.01a16828.js.map": "/Construction_Company/static/js/main.01a16828.js.map"
   },
   "entrypoints": [
-    "static/css/main.53713ddc.css",
-    "static/js/main.cf3d743e.js"
+    "static/css/main.4942c12b.css",
+    "static/js/main.01a16828.js"
   ]
 }
