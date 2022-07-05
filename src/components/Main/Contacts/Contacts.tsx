@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useState} from 'react';
 import style from './Contacts.module.scss';
 import MyComponent from "../../Mao/Map";
+import Footer from "../../Footer/Footer";
 
 type ContactsPropsType = {
     titleButton: string
@@ -84,6 +85,7 @@ const Contacts = (props: ContactsPropsType) => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

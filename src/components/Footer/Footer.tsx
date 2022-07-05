@@ -5,14 +5,13 @@ import style from "./Footer.module.scss"
 
 const Footer = () => {
     return (
-        <div className="d-none d-sm-block">
             <div className={style.footer}>
-                <div className="container ">
+                <div className="container container-fluid-sm  ">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-3 d-none d-sm-block">
                             <div className={style.itemId}>
                                 <img src={gsk} alt="gsk"/>
-                                <ul>
+                                <ul className="d-none d-sm-block">
                                     <li>ИНН: 7733332673</li>
                                     <li>ОГРН: 1187746942118</li>
                                     <li>Генеральный директор ООО «ГСК»
@@ -23,27 +22,44 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <nav>
                                 <div className={style.link}>
                                     <Link className={style.item} to="/">Главная</Link>
+                                    <hr className="d-md-none"/>
                                     <Link className={style.item} to={''}>О нас</Link>
+                                    <hr className="d-md-none"/>
+
                                     <Link className={style.item} to={''}>Каталог</Link>
+                                    <hr className="d-md-none"/>
+
                                     <Link className={style.item} to={''}>Доставка и оплата</Link>
+                                    <hr className="d-md-none"/>
+
                                     <Link className={style.item} to={'/cooperation'}>Сотрудничество</Link>
+                                    <hr className="d-md-none"/>
+
                                 </div>
                             </nav>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <nav className="d-flex flex-column">
                                 <div className={style.link}>
                                     <Link className={style.item} to={''}>Прайс-лист </Link>
-                                    <Link className={style.item} to="/contactsList">Контакты</Link>
-                                    <Link className={style.item} to="/articles">Статьи</Link>
-                                    <Link className={style.item} to="/certificate">Сертификаты ГОСТ</Link>
-                                    <Link className={style.item} to="">Отзывы</Link>
-                                </div>
+                                    <hr className="d-md-none"/>
 
+                                    <Link className={style.item} to="/contactsList">Контакты</Link>
+                                    <hr className="d-md-none"/>
+
+                                    <Link className={style.item} to="/articles">Статьи</Link>
+                                    <hr className="d-md-none"/>
+
+                                    <Link className={style.item} to="/certificate">Сертификаты ГОСТ</Link>
+                                    <hr className="d-md-none"/>
+
+                                    <Link className={style.item} to="">Отзывы</Link>
+                                    <hr className="d-md-none"/>
+                                </div>
                             </nav>
                         </div>
                         <div className="col-md-3">
@@ -77,13 +93,19 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                        <hr className="d-md-none"/>
+
                     </div>
-                    <div className="w-50 pt-2">
+                    <div className="col-sm-12 col-md-6 pt-2">
                         <div className="row">
                             <div className={style.rights}>
-                                <div>© 2022 ГСК. Все права защищены.</div>
-                                <div>|</div>
-                                <div>Пользовательское соглашение</div>
+                                <div className="col-sm-12 col-md-6">© 2022 ГСК. Все права защищены.</div>
+                                <hr className="d-md-none"/>
+
+                                <div className="d-none d-sm-block col-md-1">|</div>
+                                <div className="col-sm-12 col-md-5">Пользовательское соглашение</div>
+                                <hr className="d-md-none"/>
+
                             </div>
                         </div>
                         <div className={style.footerTextSmall}>
@@ -99,7 +121,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

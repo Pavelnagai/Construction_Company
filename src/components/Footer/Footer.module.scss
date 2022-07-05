@@ -64,3 +64,10 @@
     line-height: 8.47px;
   }
 }
+
+@media screen and (max-width: 576px){
+  .rights {
+    display: flex;
+    flex-direction: column;
+  }
+}
