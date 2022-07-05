@@ -185,7 +185,6 @@ const Main = () => {
             </div>
             <Partners/>
             <Contacts titleButton="Заказать звонок"/>
-            <Footer/>
         </div>
     );
 };

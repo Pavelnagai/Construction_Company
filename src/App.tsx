@@ -9,6 +9,8 @@ import Articles from "./components/Articles/Articles";
 import Header from "./components/Header/Header";
 import CertificatesAndGOST from "./components/certificatesAndGOSTStandards/Certificates";
 import Cooperation from "./components/Cooperation/Cooperation";
+import DeliveryCalculator from "./components/DeliveryCalculator/DeliveryCalculator";
+import Catalog from "./components/Catalog/Catalog";
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                 <Route path="/delivery" element={<Delivery/>}/>
                 <Route path="/certificate" element={<CertificatesAndGOST/>}/>
                 <Route path="/cooperation" element={<Cooperation/>}/>
+                <Route path="/deliveryCalculator" element={<DeliveryCalculator/>}/>
+                <Route path="/catalog" element={<Catalog/>}/>
             </Routes>
         </div>
     );

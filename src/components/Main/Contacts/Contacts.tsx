@@ -85,7 +85,6 @@ const Contacts = (props: ContactsPropsType) => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };
