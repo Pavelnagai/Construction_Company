@@ -7,28 +7,32 @@ import './Partners.scss'
 
 const Partners = () => {
     return (
-        <div className="partners d-flex align-items-center">
+        <div className="d-md-flex align-items-md-center">
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
-                        <h1>25+</h1>
-                        <p>Партнёров Главной Строительной компании. Короткий екст про сотрудничество и совместные
+                    <div className="col-md-3">
+                        <h1 className="d-none d-sm-block">25+</h1>
+                        <div className="d-none d-sm-block">
+                        <p >Партнёров Главной Строительной компании. Короткий екст про
+                            сотрудничество и совместные
                             проекты</p>
+                        </div>
                     </div>
-                    <div className="col-9 imagePartners">
+                    <div className="col-sm-auto d-sm-none ">
+                        <h2 className="text-center">Партнёры ГСК</h2>
+                    </div>
+                    <div className="col-sm-12 col-md-9">
                         <div className="row">
-                            <div className="col-3"><img className="img " src={gazProm} alt="gazProm"/></div>
-                            <div className="col-3"><img src={alfaBank} alt="alfaBank"/>
+                            <div className="col-sm-6 col-md-3"><img  src={gazProm} alt="gazProm"/></div>
+                            <div className="col-sm-6 col-md-3"><img   src={alfaBank} alt="alfaBank"/>
                             </div>
-                            <div className="col-3"><img src={federation} alt="federation"/>
+                            <div className="col-sm-6 col-md-3"><img  src={federation} alt="federation"/>
                             </div>
-                            <div className="col-3"><img src={russiaJD} alt="russiaJD"/>
+                            <div className="col-sm-6 col-md-3"><img  src={russiaJD} alt="russiaJD"/>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

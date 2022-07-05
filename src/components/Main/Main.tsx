@@ -12,51 +12,48 @@ import Footer from "../Footer/Footer";
 const Main = () => {
     return (
         <div>
-            {/*<Header/>*/}
-            <div>
-                <div>
-                    <div className="main ">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-sm-12 col-md-6">
-                                    <h1>Главная Строительная Компания</h1>
-                                    <p>Главная строительная компания, входит в Graal.group<br/> Специализируется на
-                                        продаже
-                                        бетона и
-                                        чего-то там<br/> Доставляем и то се пятое десятое</p>
-                                    <button className="btn btn-warning">Заказать бетон</button>
-                                </div>
-                            </div>
+            <div className="main ">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6">
+                            <h1>Главная Строительная Компания</h1>
+                            <p>Главная строительная компания, входит в Graal.group<br/> Специализируется на
+                                продаже
+                                бетона и
+                                чего-то там<br/> Доставляем и то се пятое десятое</p>
+                            <button className="btn btn-warning">Заказать бетон</button>
                         </div>
-                    </div>
-                    <div className="container row "
-                         style={{position: "absolute", top: "500px", padding: "165px"}}>
-                        <img className="col-3" src={Polygon} alt=""/>
-                        <img className="col-3" src={Polygon} alt=""/>
-                        <img className="col-3" src={Polygon} alt=""/>
-                        <img className="col-3" src={Polygon} alt=""/>
-                    </div>
-                    <div className="mainForm">
-                        <div className="container">
-                            <h2 className="text-center">Хотите купить бетон?</h2>
-                            <p className="text-center">Оставьте свои контакты и наши специалисты свяжутся с вами.</p>
-                            <form className="form d-flex justify-content-center">
-                                <div className="row">
-                                    <div className="col-6 d-flex"><input type="text" className="form-control"
-                                                                         placeholder="Ваше имя"/>
-                                    </div>
-                                    <div className="col-6 d-flex">
-                                        <input type="text" className="form-control" placeholder="Ваш телефон"/>
-                                        <button className="btn btn-dark">Заказать звонок</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div className="footerMain d-flex justify-content-center align-items-center">
-                        <h2>Актуальный прайс на продукцию ГСК</h2>
                     </div>
                 </div>
+            </div>
+            <div className="container row "
+                 style={{position: "absolute", top: "500px", padding: "165px"}}>
+                <img className="col-3" src={Polygon} alt=""/>
+                <img className="col-3" src={Polygon} alt=""/>
+                <img className="col-3" src={Polygon} alt=""/>
+                <img className="col-3" src={Polygon} alt=""/>
+            </div>
+            <div className="mainForm">
+                <div className="container">
+                    <h2 className="text-center">Хотите купить бетон?</h2>
+                    <p className="text-center">Оставьте свои контакты и наши специалисты свяжутся с вами.</p>
+                    <form className="form d-flex justify-content-center">
+                        <div className="row   ">
+                            <div className="col-sm-12 col-md-6 d-flex"><input type="text" className="form-control"
+                                                                              placeholder="Ваше имя"/>
+                            </div>
+                            <div className="col-sm-12 col-md-6 d-flex">
+                                <input type="text" className="form-control" placeholder="Ваш телефон"/>
+                            </div>
+                            <div className="col-sm-6">
+                                <button className="btn btn-dark">Заказать звонок</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div className="footerMain d-flex justify-content-center align-items-center">
+                <h2>Актуальный прайс на продукцию ГСК</h2>
             </div>
             <div className="container">
                 <div className="row">
@@ -84,7 +81,7 @@ const Main = () => {
             <InfoGSK/>
             <div className="container d-flex flex-column align-items-center">
                 <h1>Порядок работы</h1>
-                <p>Процесс реализации вашего заказа от начала и до конца.</p>
+                <p className="d-none d-sm-block">Процесс реализации вашего заказа от начала и до конца.</p>
                 <div className="row d-flex justify-content-center">
                     <div className="col-xs-12 col-md-3">
                         <h4>Заявка</h4>
@@ -118,10 +115,10 @@ const Main = () => {
             <Articles/>
             <div className="container">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-sm-12 col-md-6">
                         <div className="bg-info">
                             <div className="row">
-                                <div className="col-6"><img src={photoKatalog} alt=""/></div>
+                                <div className="col-6"><img className="img-fluid" src={photoKatalog} alt=""/></div>
                                 <div className="col-5 d-flex flex-column align-items-center justify-content-center">
                                     <h4>Вы можете скачать пример договора с ГСК</h4>
                                     <div className="btn btn-warning">Скачать договор</div>
@@ -129,10 +126,10 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-sm-12 col-md-6">
                         <div className="bg-light">
                             <div className="row">
-                                <div className="col-6"><img src={photoKatalog} alt=""/></div>
+                                <div className="col-6"><img className="img-fluid" src={photoKatalog} alt=""/></div>
                                 <div className="col-5 d-flex flex-column align-items-center justify-content-center">
                                     <h4>Скачайте полный каталог продукции ГСК</h4>
                                     <div className="btn btn-warning">Скачать каталог</div>
@@ -144,7 +141,7 @@ const Main = () => {
                 </div>
             </div>
             <Partners/>
-            <Contacts/>
+            <Contacts titleButton="Заказать звонок"/>
             <Footer/>
         </div>
     );

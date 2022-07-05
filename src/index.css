@@ -1,9 +1,9 @@
+@import "./access/scss/mixins.scss";
+
 body {
     margin: 0;
     font-family: "Inter",
     sans-serif;
-    /*-webkit-font-smoothing: antialiased;*/
-    /*-moz-osx-font-smoothing: grayscale;*/
 }
 
 
@@ -23,4 +23,22 @@ h3 {
     font-size: 40px;
     font-weight: 800;
     line-height: 54px;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 41px;
+        font-weight: 800;
+        line-height: 47px;
+    }
+    h2 {
+        font-size: 27px;
+        font-weight: 800;
+        line-height: 64px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 31px;
+    }
 }

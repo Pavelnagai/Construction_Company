@@ -2,7 +2,10 @@ import React, {ChangeEvent, useState} from 'react';
 import style from './Contacts.module.scss';
 import MyComponent from "../../Mao/Map";
 
-const Contacts = () => {
+type ContactsPropsType = {
+    titleButton: string
+}
+const Contacts = (props: ContactsPropsType) => {
     const [value, setValue] = useState<boolean>(false);
     const disabledButton = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.checked)
@@ -13,9 +16,7 @@ const Contacts = () => {
                 <div className="row pt-5">
                     <div className="col">
                         <h2>Контакты</h2>
-                        <div style={{width: "535px", height: "372px", background: "black"}}>
-                            <MyComponent/>
-                        </div>
+                        <MyComponent/>
                     </div>
                     <div className="col" style={{color: "#000000", fontWeight: "300", fontSize: "20px"}}>
                         <h2>Остались вопросы?</h2>
@@ -23,12 +24,11 @@ const Contacts = () => {
                             специалистам.</p>
                         <div className={style.form}>
                             <form className="row">
-
-                                <div className="col-md-6">
+                                <div className="col-sm-12 col-md-6">
                                     <input type="text" className="form-control form-control-lg" id="inputText"
                                            placeholder="Ваше имя"/>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-sm-12 col-md-6">
                                     <input type="email" className="form-control form-control-lg" id="inputEmail4"
                                            placeholder="Ваш e-mail"/>
                                 </div>
@@ -42,7 +42,8 @@ const Contacts = () => {
                                                                   onChange={disabledButton}/></div>
                                     <div className="col-5">Я согласен на обработку персональных данных</div>
                                     <div className="col-6">
-                                        <button className="btn btn-warning" disabled={+value === 0}>Отправить письмо</button>
+                                        <button className="btn btn-warning" disabled={+value === 0}>{props.titleButton}
+                                        </button>
                                     </div>
                                 </div>
 
@@ -50,8 +51,8 @@ const Contacts = () => {
                         </div>
                     </div>
                 </div>
-                <div className="d-flex justify-content-between p-3 ">
-                    <div>
+                <div className="row d-flex justify-content-between p-3 ">
+                    <div className="col-sm-12 col-md-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                              className="bi bi-geo-alt" viewBox="0 0 16 16">
                             <path
@@ -60,8 +61,8 @@ const Contacts = () => {
                         </svg>
                         {"\tПресненская наб., 8, стр. 1, Москва, Россия"}
                     </div>
-                    <div>|</div>
-                    <div>
+                    <div className="col-md-1 d-none d-sm-block">|</div>
+                    <div className="col-sm-12 col-md-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                              className="bi bi-telephone" viewBox="0 0 16 16">
                             <path
@@ -69,8 +70,8 @@ const Contacts = () => {
                         </svg>
                         {"\t+7(964) 578-14-83"}
                     </div>
-                    <div>|</div>
-                    <div>
+                    <div className="col-md-1 d-none d-sm-block">|</div>
+                    <div className="col-sm-12 col-md-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                              className="bi bi-chat-dots" viewBox="0 0 16 16">
                             <path

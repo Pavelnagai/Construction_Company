@@ -20,6 +20,9 @@ const Header = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
+                                <li className="nav-item d-sm-none">
+                                    <Link className="nav-link" aria-current="page" to="/">Главная</Link>
+                                </li>
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
                                 </li>

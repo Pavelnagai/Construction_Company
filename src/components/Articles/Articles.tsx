@@ -10,9 +10,9 @@ const Articles = () => {
                 <div className="container">
                     <h2>Актульные статьи</h2>
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-sm-12 col-md-6">
                             <h3>Как определяется класс бетона?</h3>
-                            <img src={cla} alt=""/>
+                            <img className="img-fluid" src={cla} alt=""/>
                             <div className="row">
                                 <div className="col-6"><h6>Классы бетона</h6></div>
                                 <div className="col-6">
@@ -20,9 +20,9 @@ const Articles = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-sm-12 col-md-6">
                             <h3>Марки бетона: характеристики</h3>
-                            <img src={bet} alt=""/>
+                            <img className="img-fluid" src={bet} alt=""/>
                             <div className="row">
                                 <div className="col-6"><h6>Марки бетона</h6></div>
                                 <div className="col-6">

@@ -10,7 +10,6 @@ import './DataGSK.scss'
 
 const DataGsk = () => {
     return (
-        <div className="dataGsk">
             <div className="container">
                 <div className="calc">
                     <div className="row d-flex align-items-center">
@@ -19,11 +18,11 @@ const DataGsk = () => {
                                 карте</h3>
                             <button className="btn btn-light">Калькулятор доставки</button>
                         </div>
-                        <div className="col-2">
-                            <img style={{width: "252px", height: "108px"}} src={vector} alt=""/>
+                        <div className="col-6">
+                            <img className="img-fluid" src={vector} alt=""/>
                         </div>
-                        <div className="col-2">
-                            <img style={{borderBottomRightRadius: "16px", borderTopRightRadius: "16px"}} src={photo}
+                        <div className="col-6">
+                            <img className="img-fluid" style={{borderBottomRightRadius: "16px", borderTopRightRadius: "16px"}} src={photo}
                                  alt=""/>
                         </div>
                     </div>
@@ -31,15 +30,13 @@ const DataGsk = () => {
                 <div className="row">
                     <h2>Работы, выполненные ГСК</h2>
                     <div className="row row-cols-sm-2 row-cols-md-4">
-                        <div className="col-sm-6 col-md-3"><img src={work1} alt="work1"/></div>
-                        <div className="col-sm-6 col-md-3"><img src={work2} alt="work2"/></div>
-                        <div className="col-sm-6 col-md-3"><img src={work3} alt="work3"/></div>
-                        <div className="col-sm-6 col-md-3"><img src={work4} alt="work4"/></div>
+                        <div className="col-sm-6 col-md-3"><img className="img-fluid" src={work1} alt="work1"/></div>
+                        <div className="col-sm-6 col-md-3"><img className="img-fluid" src={work2} alt="work2"/></div>
+                        <div className="col-sm-6 col-md-3"><img className="img-fluid" src={work3} alt="work3"/></div>
+                        <div className="col-sm-6 col-md-3"><img className="img-fluid" src={work4} alt="work4"/></div>
                     </div>
                 </div>
-
             </div>
-        </div>
     );
 };
 
