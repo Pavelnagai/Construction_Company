@@ -8,11 +8,50 @@ import Contacts from "./Contacts/Contacts";
 import Partners from "../Partners/Partners";
 import photoKatalog from "../../image/Ellipse 103.png"
 import Footer from "../Footer/Footer";
+import img from "../../image/гск 1.png";
+import {Link} from "react-router-dom";
 
 const Main = () => {
     return (
         <div>
             <div className="main ">
+                    <div>
+                        <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample"
+                             aria-labelledby="offcanvasExampleLabel">
+                            <div className="offcanvas-header">
+                                <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <button type="button" className="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Закрыть"></button>
+                            </div>
+                            <div className="offcanvas-body">
+                                <ul className="navbar-nav">
+                                    <li className="nav-item d-sm-none">
+                                        <Link className="nav-link" aria-current="page" to="/">Главная</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">Каталог</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/delivery">Доставка и оплата</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to={"/contactsList"}>Контакты</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/articles">Статьи</Link>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
