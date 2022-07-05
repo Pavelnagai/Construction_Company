@@ -39,13 +39,6 @@ const Header = () => {
                                     <Link className="nav-link" to="/articles">Статьи</Link>
                                 </li>
                             </ul>
-                            <div className="">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <img src={ellipse} alt="mail"/>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>

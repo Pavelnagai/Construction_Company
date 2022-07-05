@@ -30,7 +30,7 @@ const Footer = () => {
                                     <Link className={style.item} to={''}>О нас</Link>
                                     <Link className={style.item} to={''}>Каталог</Link>
                                     <Link className={style.item} to={''}>Доставка и оплата</Link>
-                                    <Link className={style.item} to={''}>Сотрудничество</Link>
+                                    <Link className={style.item} to={'/cooperation'}>Сотрудничество</Link>
                                 </div>
                             </nav>
                         </div>

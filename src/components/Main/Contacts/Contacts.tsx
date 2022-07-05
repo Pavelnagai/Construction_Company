@@ -16,6 +16,7 @@ const Contacts = (props: ContactsPropsType) => {
                 <div className="row pt-5">
                     <div className="col">
                         <h2>Контакты</h2>
+                        <p className="d-md-none ">Собственные бетонные заводы</p>
                         <MyComponent/>
                     </div>
                     <div className="col" style={{color: "#000000", fontWeight: "300", fontSize: "20px"}}>
