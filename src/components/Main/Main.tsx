@@ -7,52 +7,53 @@ import Articles from "../Articles/Articles";
 import Contacts from "./Contacts/Contacts";
 import Partners from "../Partners/Partners";
 import photoKatalog from "../../image/Ellipse 103.png"
-import Footer from "../Footer/Footer";
 import img from "../../image/гск 1.png";
 import {Link} from "react-router-dom";
+import PriceList from "../PriceList/PriceList";
 
 const Main = () => {
+
     return (
         <div>
             <div className="main ">
-                    <div className="d-md-none ">
-                        <button className="btn btn-warning" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 className="bi bi-justify" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                      d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5  0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
-                        </button>
+                <div className="d-md-none ">
+                    <button className="btn btn-warning" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             className="bi bi-justify" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5  0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
 
-                        <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample"
-                             aria-labelledby="offcanvasExampleLabel">
-                            <div className="offcanvas-header">
-                                <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                <button type="button" className="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Закрыть"></button>
-                            </div>
-                            <div className="offcanvas-body">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item d-sm-none">
-                                        <Link className="nav-link" aria-current="page" to="/">Главная</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Каталог</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/delivery">Доставка и оплата</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to={"/contactsList"}>Контакты</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/articles">Статьи</Link>
-                                    </li>
-                                </ul>
+                    <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample"
+                         aria-labelledby="offcanvasExampleLabel">
+                        <div className="offcanvas-header">
+                            <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Закрыть"></button>
+                        </div>
+                        <div className="offcanvas-body">
+                            <ul className="navbar-nav">
+                                <li className="nav-item d-sm-none">
+                                    <Link className="nav-link" aria-current="page" to="/">Главная</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Каталог</a>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/delivery">Доставка и оплата</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to={"/contactsList"}>Контакты</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/articles">Статьи</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -71,55 +72,31 @@ const Main = () => {
             </div>
             <div className="container row "
                  style={{position: "absolute", top: "500px", padding: "165px"}}>
-                <img className="col-3" src={Polygon} alt=""/>
-                <img className="col-3" src={Polygon} alt=""/>
-                <img className="col-3" src={Polygon} alt=""/>
-                <img className="col-3" src={Polygon} alt=""/>
+                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
+                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
+                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
+                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
             </div>
             <div className="mainForm">
                 <div className="container">
                     <h2 className="text-center">Хотите купить бетон?</h2>
                     <p className="text-center">Оставьте свои контакты и наши специалисты свяжутся с вами.</p>
                     <form className="form d-flex justify-content-center">
-                        <div className="row   ">
-                            <div className="col-sm-12 col-md-6 d-flex"><input type="text" className="form-control"
-                                                                              placeholder="Ваше имя"/>
+                        <div className="row">
+                            <div className="col-sm-12 col-md-4 p-2 d-flex">
+                                <input type="text" className="form-control form-control-lg" placeholder="Ваше имя"/>
                             </div>
-                            <div className="col-sm-12 col-md-6 d-flex">
-                                <input type="text" className="form-control" placeholder="Ваш телефон"/>
+                            <div className="col-sm-12 col-md-4 p-2 pe-md-0  d-flex">
+                                <input type="text" className="form-control form-control-lg" placeholder="Ваш телефон"/>
                             </div>
-                            <div className="col-sm-6">
+                            <div className="d-flex justify-content-center col-sm-6 col-md-3 p-2 ps-md-0">
                                 <button className="btn btn-dark">Заказать звонок</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div className="footerMain d-flex justify-content-center align-items-center">
-                <h2>Актуальный прайс на продукцию ГСК</h2>
-            </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                        <div className="btn">1</div>
-                    </div>
-                    <div className="col-2">
-                        <div className="btn">2</div>
-                    </div>
-                    <div className="col-2">
-                        <div className="btn">3</div>
-                    </div>
-                    <div className="col-2">
-                        <div className="btn">4</div>
-                    </div>
-                    <div className="col-2">
-                        <div className="btn">5</div>
-                    </div>
-                </div>
-                <div className=" d-flex justify-content-center">
-                    <div className="btn btn-warning">Смотреть весь список</div>
-                </div>
-            </div>
+            <PriceList/>
             <DataGsk/>
             <InfoGSK/>
             <div className="container d-flex flex-column align-items-center">
