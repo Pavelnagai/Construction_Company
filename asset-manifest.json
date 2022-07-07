@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Construction_Company/static/css/main.62dc2292.css",
-    "main.js": "/Construction_Company/static/js/main.da1f77dc.js",
+    "main.js": "/Construction_Company/static/js/main.0c96e341.js",
     "static/media/Ellipse 103.svg": "/Construction_Company/static/media/Ellipse 103.56e2b5dccc85854ad328e75e339b0311.svg",
     "static/media/carbon-capture-hero (1) 1.jpg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.3e2048f7cb7d12bce99c.jpg",
     "static/media/Rectangle 4065-2.png": "/Construction_Company/static/media/Rectangle 4065-2.23224c4d67f774da130a.png",
@@ -27,10 +27,10 @@
     "static/media/Illustration.svg": "/Construction_Company/static/media/Illustration.cde36cc0c3022348710618efa097d1fa.svg",
     "index.html": "/Construction_Company/index.html",
     "main.62dc2292.css.map": "/Construction_Company/static/css/main.62dc2292.css.map",
-    "main.da1f77dc.js.map": "/Construction_Company/static/js/main.da1f77dc.js.map"
+    "main.0c96e341.js.map": "/Construction_Company/static/js/main.0c96e341.js.map"
   },
   "entrypoints": [
     "static/css/main.62dc2292.css",
-    "static/js/main.da1f77dc.js"
+    "static/js/main.0c96e341.js"
   ]
 }
