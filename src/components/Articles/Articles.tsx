@@ -17,7 +17,7 @@ function Article(props: ArticleType) {
         <div className="row mt-4">
             <div className="col-6 d-none d-sm-block"><h6>{props.titleTwo}</h6></div>
             <div className="col-6 text-center btnDiv ">
-                <button className="btn btnWar btnWindow">Читать полностью</button>
+                <button className="btn btnWar btnWindow text-center">Читать полностью</button>
             </div>
         </div>
     </div>;
