@@ -1,0 +1,25 @@
+.contacts {
+  background: #E7E7E7;
+
+  .textSm {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .formContactsSM {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    background: #E7E7E7;
+
+    .formContactsSM {
+      display: block;
+    }
+  }
+}

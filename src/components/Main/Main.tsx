@@ -161,7 +161,7 @@ const Main = () => {
                 </div>
             </div>
             <Partners/>
-            <Contacts titleButton="Заказать звонок"/>
+            <Contacts/>
         </div>
     );
 };

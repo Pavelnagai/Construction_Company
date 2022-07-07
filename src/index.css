@@ -31,20 +31,28 @@ h3 {
         font-weight: 800;
         line-height: 47px;
     }
+
     h2 {
         font-size: 27px;
         font-weight: 800;
         line-height: 30px;
     }
+
     h3 {
         font-size: 20px;
         font-weight: 800;
         line-height: 31px;
     }
+
     th {
         font-size: 14px;
     }
+
     td {
+        font-size: 14px;
+    }
+
+    p {
         font-size: 14px;
     }
 }
