@@ -13,7 +13,7 @@ const Partners = () => {
                     екст про сотрудничество и
                     совместные проекты</p></div>
                 <div className="divOpenSm">
-                    <h2>Партнёры ГСК</h2>
+                    <h2 className="text-center">Партнёры ГСК</h2>
                 </div>
                 <div className="col-md-9 d-flex justify-content-evenly align-items-center row row-cols-2 row-cols-md-4">
                     <div><img className="img-fluid" src={gazProm} alt="gazProm"/></div>
