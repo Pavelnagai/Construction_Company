@@ -20,63 +20,58 @@ const PriceList = () => {
     }, [concrete])
     return (
         <div className="priceList">
-            <div className="footerMain d-flex justify-content-center align-items-center mb-5">
-                <h2>Актуальный прайс на продукцию ГСК</h2>
+            <div className="footerMain p-2 mb-5">
+                <h2 className="text-center">Актуальный прайс на продукцию ГСК</h2>
             </div>
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-sm-12 col-md-8 tableStyle">
-                        <div className="d-md-flex">
+                <div className="d-flex">
+                    <div className="col-sm-9 pe-md-5  tableStyle">
+                        <div className="d-md-flex justify-content-between mb-2 ">
                             <div onClick={onChangeButtonActive}
-                                 className={active === "Товарный бетон" ? "btn active m-1 ms-0" : "btn bg-white m-1 ms-0"}
+                                 className={active === "Товарный бетон" ? "btn active " : "btn bg-white "}
                                  onChange={onChangeButtonActive}>Товарный бетон
                             </div>
                             <div onClick={onChangeButtonActive} onChange={onChangeButtonActive}
-                                 className={active === "Цементные растворы" ? "btn active m-1 ms-0" : "btn bg-white m-1 ms-0"}>Цементные
+                                 className={active === "Цементные растворы" ? "btn active " : "btn bg-white"}>Цементные
                                 растворы
                             </div>
                             <div onClick={onChangeButtonActive} onChange={onChangeButtonActive}
-                                 className={active === "Цементные смеси" ? "btn active m-1 ms-0" : "btn bg-white m-1 ms-0"}>Цементные
+                                 className={active === "Цементные смеси" ? "btn active" : "btn bg-white"}>Цементные
                                 смеси
                             </div>
                             <div onClick={onChangeButtonActive} onChange={onChangeButtonActive}
-                                 className={active === "Аренда строительной техники" ? "btn active m-1 ms-0" : "btn bg-white m-1 ms-0"}>Аренда
+                                 className={active === "Аренда строительной техники" ? "btn active" : "btn bg-white"}>Аренда
                                 строительной техники
                             </div>
                             <div onClick={onChangeButtonActive} onChange={onChangeButtonActive}
-                                 className={active === "Сыпучие материалы" ? "btn active m-1 ms-0" : "btn bg-white m-1 ms-0"}>Сыпучие
+                                 className={active === "Сыпучие материалы" ? "btn active" : "btn bg-white"}>Сыпучие
                                 материалы
                             </div>
                         </div>
-                        <div className="d-none d-sm-block text-center bg-white mb-1 " style={{
-                            borderRadius: "5px",
-                            fontSize: "21px",
-                            lineHeight: "25,71px",
-                            padding: "7px",
-                            fontWeight: "500"
-                        }}>
-                            Бетон на гравийном щебне
-                        </div>
                         <Table/>
-                        <div className=" d-flex justify-content-center">
-                            <div className="btn btn-warning">Смотреть весь список</div>
+                        <div className=" d-flex justify-content-center mb-5">
+                            <div className="btn btnWar">Смотреть весь список</div>
                         </div>
                     </div>
-                    <div className="col-md-3 d-none d-sm-block">
+                    <div className=" d-none d-sm-block d-md-inline-block  bg-white m-md-3 mt-md-0 "
+                         style={{borderRadius: "5px", height: "100%"}}>
                         <div className="container">
-                            <h4>Ваш заказ</h4>
+                            <h4 className="text-center mt-2">Ваш заказ</h4>
                             <hr/>
                             <p><strong>Общий объём</strong>
-                                <br/>
-                                {valueTotalVolume} m3
+                                <div className="text-center">
+                                    {valueTotalVolume} m3
+                                </div>
+
                             </p>
                             <p><strong>Стоимость</strong>
                                 <br/>
-                                {valueCost} ₽
+                                <div className="text-center">{valueCost} ₽</div>
+
                             </p>
-                            <button className="btn btn-warning m-1">В корзину</button>
+                            <button className="btn btnWar m-1">В корзину</button>
                             <button className="btn btn-light m-1">x</button>
-                            <button className="btn btn-warning m-1">Оформить в один клик</button>
+                            <button className="btn btnWar m-1">Оформить в один клик</button>
                             <button className="btn btn-light m-1">Рассчитать доставку</button>
                         </div>
                     </div>

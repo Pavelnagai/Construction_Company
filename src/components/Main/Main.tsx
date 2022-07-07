@@ -10,6 +10,7 @@ import photoKatalog from "../../image/Ellipse 103.png"
 import img from "../../image/гск 1.png";
 import {Link} from "react-router-dom";
 import PriceList from "../PriceList/PriceList";
+import DownloadMaterials from "../DownloadMaterals/DownloadMaterials";
 
 const Main = () => {
 
@@ -17,7 +18,7 @@ const Main = () => {
         <div>
             <div className="main ">
                 <div className="d-md-none ">
-                    <button className="btn btn-warning" type="button" data-bs-toggle="offcanvas"
+                    <button className="btn btnWar" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              className="bi bi-justify" viewBox="0 0 16 16">
@@ -65,18 +66,18 @@ const Main = () => {
                                 продаже
                                 бетона и
                                 чего-то там<br/> Доставляем и то се пятое десятое</p>
-                            <button className="btn btn-warning">Заказать бетон</button>
+                            <button className="btn btnWar">Заказать бетон</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="container row "
-                 style={{position: "absolute", top: "500px", padding: "165px"}}>
-                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
-                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
-                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
-                <img className="col-md-3 img-fluid" src={Polygon} alt=""/>
-            </div>
+            {/*<div className="container row "*/}
+            {/*     style={{position: "absolute", top: "500px", padding: "165px"}}>*/}
+            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
+            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
+            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
+            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
+            {/*</div>*/}
             <div className="mainForm">
                 <div className="container">
                     <h2 className="text-center">Хотите купить бетон?</h2>
@@ -133,33 +134,7 @@ const Main = () => {
                 </div>
             </div>
             <Articles/>
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12 col-md-6">
-                        <div className="bg-info">
-                            <div className="row">
-                                <div className="col-6"><img className="img-fluid" src={photoKatalog} alt=""/></div>
-                                <div className="col-5 d-flex flex-column align-items-center justify-content-center">
-                                    <h4>Вы можете скачать пример договора с ГСК</h4>
-                                    <div className="btn btn-warning">Скачать договор</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-                        <div className="bg-light">
-                            <div className="row">
-                                <div className="col-6"><img className="img-fluid" src={photoKatalog} alt=""/></div>
-                                <div className="col-5 d-flex flex-column align-items-center justify-content-center">
-                                    <h4>Скачайте полный каталог продукции ГСК</h4>
-                                    <div className="btn btn-warning">Скачать каталог</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <DownloadMaterials/>
             <Partners/>
             <Contacts/>
         </div>

@@ -1,0 +1,52 @@
+.downloadMaterials {
+  background: #F0F1F3;
+
+  h4 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .leftColumn {
+    border-radius: 15px;
+    background: #85BDFF;
+  }
+
+  .rightColumn {
+    border-radius: 15px;
+    background: #C4C4C4;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .downloadMaterials {
+
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    img {
+      height: 100%;
+    }
+
+    .leftColumn {
+      border-radius: 8px;
+
+    }
+
+    .rightColumn {
+      display: block;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+
