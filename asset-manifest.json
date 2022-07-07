@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Construction_Company/static/css/main.62dc2292.css",
-    "main.js": "/Construction_Company/static/js/main.0c96e341.js",
+    "main.css": "/Construction_Company/static/css/main.4898ba3a.css",
+    "main.js": "/Construction_Company/static/js/main.be13bf18.js",
     "static/media/Ellipse 103.svg": "/Construction_Company/static/media/Ellipse 103.56e2b5dccc85854ad328e75e339b0311.svg",
     "static/media/carbon-capture-hero (1) 1.jpg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.3e2048f7cb7d12bce99c.jpg",
     "static/media/Rectangle 4065-2.png": "/Construction_Company/static/media/Rectangle 4065-2.23224c4d67f774da130a.png",
@@ -22,15 +22,14 @@
     "static/media/work-2.png": "/Construction_Company/static/media/work-2.aae421622b6db59dbd8a.png",
     "static/media/work-4.png": "/Construction_Company/static/media/work-4.2338e72a413078ba698a.png",
     "static/media/Photo.png": "/Construction_Company/static/media/Photo.413785dd7c4efae66dfe.png",
-    "static/media/Polygon BG.png": "/Construction_Company/static/media/Polygon BG.5fd3e9e8d783a5078747.png",
     "static/media/Снимок экрана 2022-03-26 в 23.30 2.png": "/Construction_Company/static/media/Снимок экрана 2022-03-26 в 23.30 2.bc37324832b739dbabac.png",
     "static/media/Illustration.svg": "/Construction_Company/static/media/Illustration.cde36cc0c3022348710618efa097d1fa.svg",
     "index.html": "/Construction_Company/index.html",
-    "main.62dc2292.css.map": "/Construction_Company/static/css/main.62dc2292.css.map",
-    "main.0c96e341.js.map": "/Construction_Company/static/js/main.0c96e341.js.map"
+    "main.4898ba3a.css.map": "/Construction_Company/static/css/main.4898ba3a.css.map",
+    "main.be13bf18.js.map": "/Construction_Company/static/js/main.be13bf18.js.map"
   },
   "entrypoints": [
-    "static/css/main.62dc2292.css",
-    "static/js/main.0c96e341.js"
+    "static/css/main.4898ba3a.css",
+    "static/js/main.be13bf18.js"
   ]
 }
