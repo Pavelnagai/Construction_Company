@@ -1,7 +1,60 @@
-.articles {
+.article {
 
-  .catalog {
-    height: 450px;
-    background: #F0F1F3;
+  h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}
+
+.articles {
+  h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article {
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .btnDiv {
+      position: relative;
+      bottom: 100px;
+      right: 10px;
+
+      .btnWindow {
+        width: 110%;
+        position: absolute;
+      }
+    }
+  }
+  .articles {
+    h2 {
+      font-size: 27px;
+      font-weight: 800;
+      line-height: 64px;
+      letter-spacing: 0;
+      text-align: center;
+    }
   }
 }
