@@ -7,31 +7,19 @@ import './Partners.scss'
 
 const Partners = () => {
     return (
-        <div className="d-md-flex align-items-md-center">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
-                        <h1 className="d-none d-sm-block">25+</h1>
-                        <div className="d-none d-sm-block">
-                        <p >Партнёров Главной Строительной компании. Короткий екст про
-                            сотрудничество и совместные
-                            проекты</p>
-                        </div>
-                    </div>
-                    <div className="col-sm-auto d-sm-none ">
-                        <h2 className="text-center">Партнёры ГСК</h2>
-                    </div>
-                    <div className="col-sm-12 col-md-9">
-                        <div className="row">
-                            <div className="col-sm-6 col-md-3"><img  src={gazProm} alt="gazProm"/></div>
-                            <div className="col-sm-6 col-md-3"><img   src={alfaBank} alt="alfaBank"/>
-                            </div>
-                            <div className="col-sm-6 col-md-3"><img  src={federation} alt="federation"/>
-                            </div>
-                            <div className="col-sm-6 col-md-3"><img  src={russiaJD} alt="russiaJD"/>
-                            </div>
-                        </div>
-                    </div>
+        <div className="container pt-5 pb-5">
+            <div className="row">
+                <div className="col-md-3 divOpenMd"><h2>25+</h2> <p>Партнёров Главной Строительной компании. Короткий
+                    екст про сотрудничество и
+                    совместные проекты</p></div>
+                <div className="divOpenSm">
+                    <h2>Партнёры ГСК</h2>
+                </div>
+                <div className="col-md-9 d-flex justify-content-evenly align-items-center row row-cols-2 row-cols-md-4">
+                    <div><img className="img-fluid" src={gazProm} alt="gazProm"/></div>
+                    <div><img className="img-fluid" src={alfaBank} alt="alfaBank"/></div>
+                    <div><img className="img-fluid" src={federation} alt="federation"/></div>
+                    <div><img className="img-fluid" src={russiaJD} alt="russiaJD"/></div>
                 </div>
             </div>
         </div>
