@@ -6,32 +6,26 @@ import iconSvg2 from "../../image/svg/Ellipse 103.svg"
 
 const DownloadMaterials = () => {
     return (
-        <div className="downloadMaterials">
-            <div className="container pt-5 pb-5 ">
-                <h2 className="d-none d-sm-block">Скачать материалы ГСК</h2>
-                <div className="row">
-                    <div className="col-sm-12 col-md-6 ">
-                        <div className="leftColumn  mb-3">
-                            <div className="row d-flex justify-content-evenly align-items-center ">
-                                <div className="col-4 col-md-5"><img className="img-fluid " src={iconSvg} alt=""/></div>
-                                <div className="col-8 col-md-7">
-                                    <h4 className="pb-3 mt-3">Вы можете скачать пример договора с ГСК</h4>
-                                    <div className="btn btnWar pt-2 mb-3">Скачать договор</div>
-                                </div>
-                            </div>
+        <div className="downloadMaterials pb-5 pt-4">
+            <div className="container">
+                <h2 className="pb-3">Скачать материалы ГСК</h2>
+                <div className=" divContainer">
+                    <div className="left d-flex align-items-center m-2">
+                        <div className="col-4 col-md-5 d-flex justify-content-center p-2">
+                            <img className="img-fluid photoElement" src={iconSvg} alt=""/>
+                        </div>
+                        <div className="col-5 ms-3">
+                            <h4>Вы можете скачать пример договора с ГСК</h4>
+                            <button className="btn btnWar">Скачать договор</button>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-6">
-                        <div className="rightColumn ">
-                            <div className="row">
-                                <div className="col-4 col-md-6"><img className="img-fluid"
-                                                                     src={iconSvg2} alt=""/></div>
-                                <div className="col-8 col-md-6">
-                                    <h4>Скачайте полный каталог продукции ГСК</h4>
-                                    <div className="btn btnWar text-start mb-3">Скачать каталог</div>
-                                </div>
-                            </div>
-
+                    <div className="right d-flex  m-2">
+                        <div className="col-4 col-md-5 d-flex  ">
+                            <img className="img-fluid photoElement" src={iconSvg2} alt=""/>
+                        </div>
+                        <div className="col-5 divMd m-3">
+                            <h4>Скачайте полный каталог продукции ГСК</h4>
+                            <button className="btn btnWar">Скачать каталог</button>
                         </div>
                     </div>
                 </div>
@@ -39,5 +33,4 @@ const DownloadMaterials = () => {
         </div>
     );
 };
-
 export default DownloadMaterials;

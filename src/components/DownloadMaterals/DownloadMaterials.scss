@@ -5,45 +5,70 @@
     font-size: 25px;
     font-weight: 800;
     line-height: 30px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
-  .leftColumn {
-    border-radius: 15px;
-    background: #85BDFF;
-  }
+  .divContainer {
+    display: flex;
 
-  .rightColumn {
-    border-radius: 15px;
-    background: #C4C4C4;
+    .left {
+      background: #85BDFF;
+      border-radius: 15px;
+      height: 300px;
+      width: 700px;
+
+      .photoElement {
+        width: 200px;
+      }
+    }
+
+    .right {
+      background: #C4C4C4;
+      border-radius: 15px;
+      height: 300px;
+      width: 700px;
+
+      .divMd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .photoElement {
+        width: 230px;
+      }
+    }
   }
 }
 
 
 @media screen and (max-width: 576px) {
   .downloadMaterials {
-
     h4 {
       font-size: 18px;
       font-weight: 700;
       line-height: 22px;
-      letter-spacing: 0em;
+      letter-spacing: 0;
       text-align: left;
     }
 
-    img {
-      height: 100%;
-    }
+    .divContainer {
+      display: flex;
+      flex-direction: column;
 
-    .leftColumn {
-      border-radius: 8px;
+      .left {
+        border-radius: 8px;
+        height: 150px;
+        width: 90vh;
+      }
 
-    }
-
-    .rightColumn {
-      display: block;
-      border-radius: 8px;
+      .right {
+        border-radius: 8px;
+        height: 150px;
+        width: 90vh;
+      }
     }
   }
 }
