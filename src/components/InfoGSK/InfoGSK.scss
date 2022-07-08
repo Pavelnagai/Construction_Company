@@ -1,4 +1,58 @@
 .infoGsk {
   background: #F0F1F3;
-  //padding: 0 165px;
+
+  .imgSm {
+    display: none;
+  }
+
+  .h2InfoGsk {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+  }
+
+  .textDecor {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .infoGsk {
+    padding: 10px;
+
+    .imgSm {
+      display: block;
+    }
+
+    .h2InfoGsk {
+      font-family: Inter;
+      font-size: 27px;
+      font-weight: 800;
+      line-height: 64px;
+      letter-spacing: 0em;
+      text-align: center;
+
+
+    }
+
+    .textDecor {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+
+
+    }
+  }
 }
