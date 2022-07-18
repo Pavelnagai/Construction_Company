@@ -5,7 +5,11 @@ body {
     font-family: "Inter",
     sans-serif;
 }
-
+.containerIndex {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 h1 {
     font-size: 63px;

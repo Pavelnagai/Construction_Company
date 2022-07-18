@@ -4,7 +4,7 @@ const DeliveryCalculator = () => {
     const [valueWithDelivery, setValueWithDelivery] = useState<number>(546)
     const [valueWithoutDelivery, setValueWithoutDelivery] = useState<number>(234)
     return (
-        <div className="container">
+        <div className="containerIndex">
             <h1>Рассчёт стоимости бетона с доставкой</h1>
             <hr/>
             <div className="row">

@@ -15,19 +15,15 @@
     .left {
       background: #85BDFF;
       border-radius: 15px;
-      height: 300px;
-      width: 700px;
 
-      .photoElement {
-        width: 200px;
-      }
+
     }
 
     .right {
       background: #C4C4C4;
       border-radius: 15px;
-      height: 300px;
-      width: 700px;
+      min-height: 250px;
+
 
       .divMd {
         display: flex;
@@ -36,9 +32,7 @@
         align-items: flex-start;
       }
 
-      .photoElement {
-        width: 230px;
-      }
+
     }
   }
 }
@@ -60,14 +54,14 @@
 
       .left {
         border-radius: 8px;
-        height: 150px;
-        width: 90vh;
+
       }
 
       .right {
         border-radius: 8px;
-        height: 150px;
-        width: 90vh;
+        min-height: 100px;
+
+
       }
     }
   }

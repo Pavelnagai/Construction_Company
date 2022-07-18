@@ -1,14 +1,56 @@
-.dataGsk {
+.h2DataGsk {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
-  .calc {
-    //margin: 20px 0;
-    //height: 302px;
-    //left: 165px;
-    //top: 64px;
-    //border-radius: 16px;
-    background: #FFAD00;
+.calculation {
+  background: #FFAD00;
+  border-radius: 16px;
 
-    .cal {
+  .dom {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 10px;
+
+    .h2Calc {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 54px;
+      letter-spacing: 0em;
+      text-align: left;
+
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .h2DataGsk {
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .calculation {
+    height: 223px;
+
+    .dom {
+      padding-left: 10px;
+      .h2Calc {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+      }
     }
   }
 }

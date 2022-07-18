@@ -8,7 +8,7 @@ import FormContacts from '../../Forms/FormContacts/FormContacts';
 const Contacts = () => {
     return (
         <div className="contacts">
-            <div className="container pb-5">
+            <div className="containerIndex pb-5">
                 <div className="row pt-5">
                     <div className="col-md-5">
                         <h2>Контакты</h2>

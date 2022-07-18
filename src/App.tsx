@@ -11,6 +11,7 @@ import CertificatesAndGOST from "./components/certificatesAndGOSTStandards/Certi
 import Cooperation from "./components/Cooperation/Cooperation";
 import DeliveryCalculator from "./components/DeliveryCalculator/DeliveryCalculator";
 import Catalog from "./components/Catalog/Catalog";
+import Basket from "./components/Basket/Basket";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/cooperation" element={<Cooperation/>}/>
                 <Route path="/deliveryCalculator" element={<DeliveryCalculator/>}/>
                 <Route path="/catalog" element={<Catalog/>}/>
+                <Route path="/basket" element={<Basket/>}/>
             </Routes>
         </div>
     );

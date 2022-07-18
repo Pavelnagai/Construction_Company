@@ -1,143 +1,94 @@
 import React from 'react';
-import Polygon from "../../image/Polygon BG.png";
 import "./Main.scss"
-import InfoGSK from "../InfoGSK/InfoGSK";
-import DataGsk from "../DataGSK/DataGSK";
-import Articles from "../Articles/Articles";
-import Contacts from "./Contacts/Contacts";
-import Partners from "../Partners/Partners";
-import photoKatalog from "../../image/Ellipse 103.png"
-import img from "../../image/гск 1.png";
-import {Link} from "react-router-dom";
-import PriceList from "../PriceList/PriceList";
-import DownloadMaterials from "../DownloadMaterals/DownloadMaterials";
+import polygon1 from "../../image/main/Count 1.svg"
+import {useAppSelector} from "../../store/redux/store";
 
 const Main = () => {
-
+    const dataTable = useAppSelector(state => state.concreteReducer)
     return (
-        <div>
-            <div className="main ">
-                <div className="d-md-none ">
-                    <button className="btn btnWar" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             className="bi bi-justify" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5  0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    </button>
+        <>
+            <div className="main">
+                <div className="row containerIndex">
+                    <div className="col-6 pt-5">
+                        <h1>Главная Строительная Компания</h1>
+                        <p>Главная строительная компания, входит в Graal.group Специализируется на продаже бетона и
+                            чего-то
+                            там Доставляем и то се пятое десятое</p>
+                        <button className="btn btnWar">Заказать бетон</button>
 
-                    <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample"
-                         aria-labelledby="offcanvasExampleLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Закрыть"></button>
-                        </div>
-                        <div className="offcanvas-body">
-                            <ul className="navbar-nav">
-                                <li className="nav-item d-sm-none">
-                                    <Link className="nav-link" aria-current="page" to="/">Главная</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/aboutUs">О нас</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Каталог</a>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/delivery">Доставка и оплата</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to={"/contactsList"}>Контакты</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/articles">Статьи</Link>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-12 col-md-6">
-                            <h1>Главная Строительная Компания</h1>
-                            <p>Главная строительная компания, входит в Graal.group<br/> Специализируется на
-                                продаже
-                                бетона и
-                                чего-то там<br/> Доставляем и то се пятое десятое</p>
-                            <button className="btn btnWar">Заказать бетон</button>
-                        </div>
+                    <div className="row polygon">
+                        <img className="col-md-3 img-fluid" src={polygon1} alt=""/>
+                        <img className="col-md-3 img-fluid" src={polygon1} alt=""/>
+                        <img className="col-md-3 img-fluid" src={polygon1} alt=""/>
+                        <img className="col-md-3 img-fluid" src={polygon1} alt=""/>
                     </div>
                 </div>
             </div>
-            {/*<div className="container row "*/}
-            {/*     style={{position: "absolute", top: "500px", padding: "165px"}}>*/}
-            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
-            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
-            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
-            {/*    <img className="col-md-3 img-fluid" src={Polygon} alt=""/>*/}
-            {/*</div>*/}
-            <div className="mainForm">
-                <div className="container">
-                    <h2 className="text-center">Хотите купить бетон?</h2>
-                    <p className="text-center">Оставьте свои контакты и наши специалисты свяжутся с вами.</p>
-                    <form className="form d-flex justify-content-center">
-                        <div className="row">
-                            <div className="col-sm-12 col-md-4 p-2 d-flex">
-                                <input type="text" className="form-control form-control-lg" placeholder="Ваше имя"/>
-                            </div>
-                            <div className="col-sm-12 col-md-4 p-2 pe-md-0  d-flex">
-                                <input type="text" className="form-control form-control-lg" placeholder="Ваш телефон"/>
-                            </div>
-                            <div className="d-flex justify-content-center col-sm-6 col-md-3 p-2 ps-md-0">
-                                <button className="btn btn-dark">Заказать звонок</button>
-                            </div>
+            <div className="formBuyConcrete">
+                <h2>Хотите купить бетон?</h2>
+                <p>Оставьте свои контакты и наши специалисты свяжутся с вами.</p>
+                <form>
+                    <input className="form-control me-4" placeholder="Ваше имя" type="text"/>
+                    <input className="form-control" placeholder="Ваш телефон" type="text"/>
+                    <button className="btn">Заказать звонок</button>
+                </form>
+            </div>
+            <div className="price">
+                <div className="shapka">
+                    <h2>Актуальный прайс на продукцию ГСК</h2>
+                </div>
+                <div className="row containerIndex">
+                    <div className="col-12 col-lg-9">
+                        <div className="d-flex priceCategories">
+                            <div className="block">Товарный бетон</div>
+                            <div className="block">Цементные растворы</div>
+                            <div className="block block--active">Цементные смеси</div>
+                            <div className="block">Аренда строительной техники</div>
+                            <div className="block">Сыпучие материалы</div>
                         </div>
-                    </form>
+                        <div className="categories"><h5>Бетон на гравийном щебне</h5></div>
+                        <table className="table text-center">
+                            <thead>
+                            <tr>
+                                <th>Марка/Класс</th>
+                                <th>Наименование</th>
+                                <th>Цена с НДС</th>
+                                <th>Количество кубов</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {dataTable.map(el => <tr key={el.id}>
+                                <td>
+                                    <div className="d-flex justify-content-evenly">
+                                        <div>{el.stamp}</div>
+                                        <div>{el.class}</div>
+                                    </div>
+                                </td>
+                                <td>{el.name}</td>
+                                <td>{el.price}</td>
+                                <td>{el.quantity}</td>
+                            </tr>)}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="col-3 order d-none d-lg-block">
+                        <h3>Ваш заказ</h3>
+                        <hr/>
+                        <h5>Общий объём</h5>
+                        <div className="scoreboard"> 1 &#13221;</div>
+                        <h5>Стоимость</h5>
+                        <div className="scoreboard">2 ₽</div>
+                        <div>
+                            <button className="btn btnWar">В корзину</button>
+                            <button className="btn"></button>
+                        </div>
+                        <button className="btn btnWar">Оформить в один клик</button>
+                        <button className="btn">Рассчитать доставку</button>
+                    </div>
                 </div>
             </div>
-            <PriceList/>
-            <DataGsk/>
-            <InfoGSK/>
-            <div className="container d-flex flex-column align-items-center">
-                <h1>Порядок работы</h1>
-                <p className="d-none d-sm-block">Процесс реализации вашего заказа от начала и до конца.</p>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-xs-12 col-md-3">
-                        <h4>Заявка</h4>
-                        <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный
-                            звонок на сайте.</p>
-                    </div>
-                    <div className="col-xs-12 col-md-3">
-                        <h4>Расчёт</h4>
-                        <p>Наши специалисты рассчитают стоимость бетона и доставки, сделают счет или коммерческое
-                            предложение.</p>
-                    </div>
-                    <div className="col-sm-12 col-md-3">
-                        <h4>Оплата</h4>
-                        <p>Наличный и безналичный расчет. Предварительная оплата для юридических лиц. Скидки и особые
-                            условия для постоянных клиентов.</p>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-sm-12 col-md-3">
-                        <h4>Производство</h4>
-                        <p>Изготовление бетонной смеси или раствора на нашем РБУ, погрузка в автобетоносмеситель.
-                            Контрольный звонок от диспетчера.</p>
-                    </div>
-                    <div className="col-sm-12 col-md-3">
-                        <h4>Доставка и разгрузка</h4>
-                        <p>Доставка производится миксерами от 7 до 10 м3. Дополнительные условия поставки обговариваются
-                            заранее.</p>
-                    </div>
-                </div>
-            </div>
-            <Articles/>
-            <DownloadMaterials/>
-            <Partners/>
-            <Contacts/>
-        </div>
+        </>
     );
 };
 

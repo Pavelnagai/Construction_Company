@@ -3,7 +3,7 @@ import cooperationImg from '../../image/Rectangle 4065-2.png'
 
 const Cooperation = () => {
     return (
-        <div className="container">
+        <div className="containerIndex">
             <h1>Сотрудничество</h1>
             <hr/>
             <div className="d-flex flex-column flex-sm-column-reverse">

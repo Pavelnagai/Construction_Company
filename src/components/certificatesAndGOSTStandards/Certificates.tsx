@@ -11,7 +11,7 @@ const CertificatesAndGOST = () => {
         setValue(e.target.checked)
     }
     return (
-        <div className="container">
+        <div className="containerIndex">
             <h2>Сертификаты и ГОСТы</h2>
             <hr/>
             <img className="img-fluid" src={AboutUsGsk69} alt=""/>

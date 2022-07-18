@@ -4,7 +4,7 @@ import MyComponent from "../Mao/Map";
 
 const Delivery = () => {
     return (
-        <div className="container">
+        <div className="containerIndex">
             <h2>Доставка и оплата</h2>
             <hr/>
             <div className="row">
