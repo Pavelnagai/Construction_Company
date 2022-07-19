@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Construction_Company/static/css/main.1bee6637.css",
-    "main.js": "/Construction_Company/static/js/main.d4baac6d.js",
+    "main.css": "/Construction_Company/static/css/main.c88220da.css",
+    "main.js": "/Construction_Company/static/js/main.5ccc3de1.js",
     "static/media/Project Cover.svg": "/Construction_Company/static/media/Project Cover.9d5cb99c3705a23f6e387de1389f8fc3.svg",
     "static/media/Ellipse 103.svg": "/Construction_Company/static/media/Ellipse 103.56e2b5dccc85854ad328e75e339b0311.svg",
     "static/media/Ellipse 46.svg": "/Construction_Company/static/media/Ellipse 46.c769d19acce715e4a9b16347d8b82cf8.svg",
-    "static/media/carbon-capture-hero (1) 1.jpg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.3e2048f7cb7d12bce99c.jpg",
+    "static/media/carbon-capture-hero (1) 1.svg": "/Construction_Company/static/media/carbon-capture-hero (1) 1.cccee76ab3e972deaea3.svg",
     "static/media/Rectangle 4065-2.png": "/Construction_Company/static/media/Rectangle 4065-2.23224c4d67f774da130a.png",
     "static/media/Photo.svg": "/Construction_Company/static/media/Photo.599dcf48e2d22f5f43bad83982f393da.svg",
     "static/media/cranes-construction-site 1.png": "/Construction_Company/static/media/cranes-construction-site 1.6515e4f62d3a37a0d390.png",
@@ -25,14 +25,16 @@
     "static/media/work-4.png": "/Construction_Company/static/media/work-4.2338e72a413078ba698a.png",
     "static/media/Photo.png": "/Construction_Company/static/media/Photo.413785dd7c4efae66dfe.png",
     "static/media/Снимок экрана 2022-03-26 в 23.30 2.png": "/Construction_Company/static/media/Снимок экрана 2022-03-26 в 23.30 2.bc37324832b739dbabac.png",
+    "static/media/Count 1.svg": "/Construction_Company/static/media/Count 1.80d0d7abdc3ae2b876fef14b6c68b73e.svg",
     "static/media/Illustration.svg": "/Construction_Company/static/media/Illustration.cde36cc0c3022348710618efa097d1fa.svg",
     "index.html": "/Construction_Company/index.html",
+    "static/media/Basket_light.svg": "/Construction_Company/static/media/Basket_light.547d997f34dfeabb14fe01d8b079e8c4.svg",
     "static/media/Arrow.svg": "/Construction_Company/static/media/Arrow.e5a4efcf8e45cf4ee143a0bb45beab54.svg",
-    "main.1bee6637.css.map": "/Construction_Company/static/css/main.1bee6637.css.map",
-    "main.d4baac6d.js.map": "/Construction_Company/static/js/main.d4baac6d.js.map"
+    "main.c88220da.css.map": "/Construction_Company/static/css/main.c88220da.css.map",
+    "main.5ccc3de1.js.map": "/Construction_Company/static/js/main.5ccc3de1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bee6637.css",
-    "static/js/main.d4baac6d.js"
+    "static/css/main.c88220da.css",
+    "static/js/main.5ccc3de1.js"
   ]
 }
