@@ -26,7 +26,7 @@ function Article(props: ArticleType) {
 const Articles = () => {
     return (
         <div className="container-fluid articles">
-            <div className="container">
+            <div className="containerIndex">
                 <h2>Актульные статьи</h2>
                 <div className="row">
                     <Article articleTitle="Марки бетона: характеристики" src={cla} titleTwo="Марки бетона"/>

@@ -2,6 +2,21 @@ import React from 'react';
 import "./Main.scss"
 import polygon1 from "../../image/main/Count 1.svg"
 import {useAppSelector} from "../../store/redux/store";
+import vector from "./../../image/svg/Arrow.svg"
+import vector2 from "./../../image/mobile/Arrow.svg"
+import photo1 from "./../../image/workGSK/Photo.png"
+import photo2 from "./../../image/mobile/Photo.svg"
+import work1 from "./../../image/workGSK/work-1.png"
+import work2 from "./../../image/workGSK/work-2.png"
+import work3 from "./../../image/workGSK/work-3.png"
+import work4 from "./../../image/workGSK/work-4.png"
+import InfoGSK from "../InfoGSK/InfoGSK";
+import Articles from "../Articles/Articles";
+import Footer from "../Footer/Footer";
+import Contacts from "./Contacts/Contacts";
+import Partners from "../Partners/Partners";
+import DownloadMaterials from "../DownloadMaterals/DownloadMaterials";
+
 
 const Main = () => {
     const dataTable = useAppSelector(state => state.concreteReducer)
@@ -51,7 +66,7 @@ const Main = () => {
                         <table className="table text-center">
                             <thead>
                             <tr>
-                                <th>Марка/Класс</th>
+                                <th className="d-none d-md-block">Марка/Класс</th>
                                 <th>Наименование</th>
                                 <th>Цена с НДС</th>
                                 <th>Количество кубов</th>
@@ -59,7 +74,7 @@ const Main = () => {
                             </thead>
                             <tbody>
                             {dataTable.map(el => <tr key={el.id}>
-                                <td>
+                                <td className="d-none d-md-block">
                                     <div className="d-flex justify-content-evenly">
                                         <div>{el.stamp}</div>
                                         <div>{el.class}</div>
@@ -87,7 +102,66 @@ const Main = () => {
                         <button className="btn">Рассчитать доставку</button>
                     </div>
                 </div>
+                <div className="text-center">
+                    <button className="btn btnWar">Смотреть весь список</button>
+                </div>
             </div>
+            <div className="calc containerIndex">
+                <div className="row">
+                    <div className="col-6 col-md-6 p-3">
+                        <h2>Рассчёт цены бетона с доставкой на карте</h2>
+                        <img className="float-end" src={vector2} alt=""/>
+                        <button className="btn bg-white">Калькулятор доставки</button>
+                    </div>
+                    <div className="col-md-3 d-none d-md-block">
+                        <img className="img-fluid " src={vector} alt=""/>
+                    </div>
+                    <div className="col-3 photoOne">
+                        <img style={{minHeight: "100%", borderRadius: "16px",}} className="img-fluid" src={photo1}
+                             alt=""/>
+                    </div>
+                    <div className="col-6 photo2">
+                        <img style={{minHeight: "100%", borderRadius: "16px",}} className="img-fluid " src={photo2}
+                             alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div className="works text-center containerIndex">
+                <h2 className="col-sm-12 h2DataGsk">Работы, выполненные ГСК</h2>
+                <div className="row row-cols-2 row-cols-md-4 pb-4">
+                    <div className="mb-4"><img className="img-fluid" src={work1} alt="work1"/></div>
+                    <div className=""><img className="img-fluid" src={work2} alt="work2"/></div>
+                    <div className=""><img className="img-fluid" src={work3} alt="work3"/></div>
+                    <div className=""><img className="img-fluid" src={work4} alt="work4"/></div>
+                </div>
+            </div>
+            <InfoGSK/>
+            <div className="work containerIndex">
+                <div className="text-center">
+                    <h2>Порядок работы</h2>
+                    <p>Процесс реализации вашего заказа от начала и до конца.</p>
+                </div>
+                <h3>Заявка</h3>
+                <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный звонок
+                    на сайте.</p>
+                <h3>Расчёт</h3>
+                <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный звонок
+                    на сайте.</p>
+                <h3>Оплата</h3>
+                <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный звонок
+                    на сайте.</p>
+                <h3>Производство</h3>
+                <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный звонок
+                    на сайте.</p>
+                <h3>Доставка и разгрузка</h3>
+                <p>Оставьте заявку любым удобным для вас способом –по e-mail, по телефону или закажите обратный звонок
+                    на сайте.</p>
+            </div>
+            <Articles/>
+            <DownloadMaterials/>
+            <Partners/>
+            <Contacts/>
+            <Footer/>
         </>
     );
 };

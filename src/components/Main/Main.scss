@@ -75,6 +75,7 @@
 
   .priceCategories {
     flex-wrap: wrap;
+
     .block {
       display: flex;
       justify-content: center;
@@ -90,13 +91,16 @@
       min-height: 51px;
       margin-right: 3px;
       margin-bottom: 6px;
+
       &:last-child {
         flex: 0 0 20%;
         margin-right: 0;
       }
+
       &--active {
         background: #FFAD00;
       }
+
       @media screen and (max-width: 992px) {
         flex: 0 0 calc(50% - 3px);
         margin-bottom: 4px;
@@ -113,7 +117,8 @@
 
   .categories {
     background: #FEFEFE;
-    h5{
+
+    h5 {
       font-size: 21px;
       font-weight: 500;
       line-height: 25px;
@@ -139,6 +144,59 @@
       text-align: center;
       padding: 10px;
       margin: 10px 0;
+    }
+  }
+}
+
+.calc {
+  background: #FFAD00;
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .photo1 {
+    display: block;
+  }
+
+  .photo2 {
+    display: none;
+  }
+}
+
+.works {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.forGSK {
+  display: flex;
+  margin-right: 7%;
+  .imgSm{
+    display: block;
+  }
+}
+
+.work {
+  padding: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .calc {
+    .photoOne {
+      display: none;
+    }
+
+    .photo2 {
+      display: block;
+
+      img {
+        min-height: 100%;
+      }
+    }
+  }
+  .forGSK{
+    .imgSm{
+      display: none;
     }
   }
 }

@@ -6,7 +6,7 @@ import style from "./Footer.module.scss"
 const Footer = () => {
     return (
             <div className={style.footer}>
-                <div className="container container-fluid-sm  ">
+                <div className="containerIndex container-fluid-sm  ">
                     <div className="row">
                         <div className="col-md-3 d-none d-sm-block">
                             <div className={style.itemId}>
